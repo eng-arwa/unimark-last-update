@@ -1,0 +1,206 @@
+.about-us{
+    background-position:top;
+
+    .container{
+        .row{
+      
+        
+            p{
+                width: 80% !important;
+                text-align: justify !important;
+            height: 100px !important;
+            overflow: scroll !important;
+            overflow: auto !important;
+            scroll-behavior: smooth !important;
+            -ms-overflow-style: none !important;  /* IE and Edge */
+            scrollbar-width: none !important;
+        
+            }
+            p::-webkit-scrollbar { 
+                display: none !important;  /* Safari and Chrome */
+            }
+            
+        
+        }
+          
+          }
+
+     .right{
+       .image{
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            border-radius: 50%;
+            left: 50%;
+            background-color: rgb(255 255 255 /20%);
+            transform: translate(-50%,-50%);
+            width: 10px;
+            z-index: 5;
+            height: 10px;
+            opacity: 1;
+        }
+        &:hover img{
+            transform: rotate(5deg) scale(1.1);
+        }
+        &:hover::before{
+            animation: flashing 0.7s ;
+        }
+        img{
+            transition: var(--maintranstion); 
+        }
+       }
+ 
+    }
+}
+
+.parent{
+    position: relative;
+    .side{
+        position: absolute;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+.welcom{
+    color: white;
+  background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
+  .container{
+
+    .row{
+        overflow: hidden;
+        img{
+        max-width: 50%;
+        max-height: 100%;
+        overflow: hidden;
+       
+        }
+       
+    }
+    .rowimg{
+        max-width: 50%;
+    }
+
+    img{
+        max-width: 50%;
+        max-height: 100%;
+        overflow: hidden; 
+    }
+
+  
+  }
+}
+
+.mission{
+background-color: #eee;
+    .container{
+        .row{
+            h1{
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+            img{
+                max-width: 100%;
+            }
+            .Polygon{
+       
+                max-width: 25% !important;
+           
+        }
+        p{
+            font-size: 2rem;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            max-width: 70%;
+        }
+        }
+    }
+}
+.overview{
+    background-color: #5A5A5A;
+    color: white;
+        .container{
+            .row{
+                h1{
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+                img{
+                    max-width: 100%;
+                }
+                .Polygon{
+           
+                    max-width: 25% !important;
+               
+            }
+            p{
+                
+            max-width: 70%;
+            }
+            }
+        }
+    }
+
+.whous{
+    background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
+   color: white;
+    .container{
+        padding: 0 !important;
+        margin: 0 !important;
+        .row{
+
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+            p{
+                max-width: 90%;
+                letter-spacing: 2px;
+                font-size: 1.3rem;
+                word-spacing: 1px;
+            }
+        }
+    }
+}
+.employ{
+    background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
+ color: black;
+    .container{
+        .row{
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        p{
+            font-size: 10px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+// animation all
+@keyframes flashing{
+    0%,40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        width: 200%;
+        height: 200%;
+    }
+}
+
+
+@media (max-width:1390px) {
+    .welcom , .overview , .whous , .mission{
+        p{
+            font-size: .6rem !important;
+        }
+    }
+}

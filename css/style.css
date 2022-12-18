@@ -1,0 +1,757 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif !important;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fffbfb), to(#a7a7a7)) !important;
+  background: linear-gradient(#fffbfb, #a7a7a7) !important;
+  border-bottom-left-radius: 25px;
+  max-width: 100%;
+  border-bottom-right-radius: 25px;
+  width: 100%;
+}
+nav .container .menu-mobile {
+  display: none;
+}
+nav .container .menu-mobile .logo {
+  background: url("../image/UNIMARK LOGO.png");
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 60px;
+  height: 20px;
+  margin: auto;
+  background-size: 60px 20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+nav .container .menu-mobile .logo:hover {
+  background: url("../image/Path 12.png");
+  background-size: 20px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+nav .container .menu-mobile ul {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  list-style: none !important;
+  gap: 30px;
+}
+nav .container .menu-mobile ul li svg {
+  font-size: 25px;
+}
+nav .container .menu-mobile ul li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+}
+nav .container .menu-mobile ul li a:not(:nth-child(3)):hover {
+  color: rgb(169, 3, 3);
+}
+nav .container .menu-mobile ul li a:last-child():hover {
+  color: black;
+}
+nav .container .menu-mobile ul li .logo-1 {
+  display: none;
+}
+nav .container .menu-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+nav .container .menu-list .bar-icon:hover {
+  display: hidden;
+}
+nav .container .menu-list li svg {
+  font-size: 25px;
+}
+nav .container .menu-list li .logo {
+  background: url("../image/UNIMARK LOGO.png");
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 60px;
+  height: 20px;
+  margin: auto;
+  background-size: 60px 20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+nav .container .menu-list li .logo:hover {
+  background: url("../image/Path 12.png");
+  background-size: 20px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+nav .container .menu-list li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: relative;
+}
+nav .container .menu-list li a:not(:nth-child(3)):hover {
+  color: rgb(169, 3, 3);
+}
+nav .container .menu-list li a:last-child():hover {
+  color: black;
+}
+nav .container .menu-list li a:last-child():hover:after {
+  color: black;
+  display: none;
+}
+nav .container .menu-list li a:not(:nth-child(3))::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: none;
+  right: -20;
+  bottom: -5px;
+  -webkit-transition-property: width;
+  transition-property: width;
+}
+nav .container .menu-list li a:hover::after {
+  width: 100%;
+  height: 3px;
+  display: block;
+  left: 0;
+  background-color: #676B73;
+  bottom: -3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 100%;
+  right: 0;
+}
+nav .container .menu-list li .logo-1 {
+  display: none;
+}
+nav .container .menu-list .parent:hover .logo-2 {
+  left: 29%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: none;
+}
+nav .container .menu-list .parent:hover .logo-1 {
+  left: 40%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: block;
+}
+
+.show-vid {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: #E6E6E6;
+}
+.show-vid div video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.border {
+  background-color: #E6E6E6;
+  height: 70px;
+  padding: 1px 0 1px 0;
+  margin-top: 0;
+  border-bottom-left-radius: 25px;
+  border: none;
+  border-bottom-right-radius: 25px;
+}
+
+.about-us {
+  background: url("../image/Layer 6.png");
+  background-color: #575A61;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.about-us .box {
+  position: relative;
+  overflow: hidden;
+}
+.about-us .box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10px;
+  z-index: 5;
+  height: 10px;
+  opacity: 1;
+}
+.about-us .box:hover img {
+  -webkit-transform: rotate(15deg) scale(1);
+          transform: rotate(15deg) scale(1);
+}
+.about-us .box:hover::before {
+  -webkit-animation: flashing 0.7s;
+          animation: flashing 0.7s;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(47, 50, 64, 0.262745098);
+}
+
+.right img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 7px solid #555555;
+}
+
+.left h5 {
+  text-align: right;
+  letter-spacing: 2px;
+  color: #D70000;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-right: 30px;
+}
+.left .container .row img {
+  max-width: 100%;
+  max-height: 80%;
+}
+.left .container .row h3 {
+  color: white;
+  font-weight: 600;
+}
+.left .container .row p {
+  color: white;
+  font-size: 1rem;
+}
+.left .container .row button {
+  background-color: #EDEDED;
+  border-radius: 20px;
+  padding: 3px 0;
+  border: none;
+  width: 160px;
+  font-size: 1.2rem;
+  position: relative;
+  color: #D70000;
+  z-index: 5;
+}
+.left .container .row button a {
+  text-decoration: none;
+  color: inherit;
+}
+.left .container .row button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: transparent;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+  border-radius: 20px;
+}
+.left .container .row button:hover::after {
+  width: 100%;
+  height: 100%;
+  background-color: #D70000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+.left .container .row button:hover {
+  color: white;
+}
+
+.carsoul {
+  background-color: #403F3F;
+  z-index: 0;
+}
+.carsoul .left-1 {
+  background: url("../image/left-1.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+.carsoul .left-2 {
+  background: url("../image/left.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+.carsoul .right-1 {
+  background: url("../image/right-1.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+.carsoul .right-2 {
+  background: url("../image/right-2.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+.services {
+  position: relative;
+  background: url("../image/sabri-tuzcu-wunVFNvqhfE-unsplash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.services .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(51, 51, 51, 0.9098039216);
+  z-index: -5;
+}
+.services .container {
+  color: white;
+}
+.services .container .headimg {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+.services .container .row .col-lg-4.col-md-4.col-xs-4 img {
+  max-width: 100px;
+}
+.services .container .row .column-1 p, .services .container .row .column-2 p, .services .container .row .column-3 p {
+  max-height: 100px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.services .container .row .column-1 p::-webkit-scrollbar, .services .container .row .column-2 p::-webkit-scrollbar, .services .container .row .column-3 p::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.services .container .row div button {
+  border: none;
+  background: #D70000;
+  font-size: 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 6px;
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+.services .container .row div button a {
+  text-decoration: none;
+  color: inherit;
+}
+.services .container .row div button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: transparent;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+.services .container .row div button:hover::after {
+  width: 100%;
+  height: 100%;
+  background-color: #EDEDED;
+  color: #D70000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+.services .container .row div button:hover {
+  color: #D70000;
+}
+.services .container .icon {
+  position: relative;
+}
+.services .container .icon::after {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  height: 10px;
+  top: 23%;
+  border-color: transparent transparent transparent white;
+  left: 113px;
+}
+.services .container .icon::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  left: 107px;
+  top: 23%;
+  padding: 5px;
+}
+
+.branches h3 {
+  background: -webkit-gradient(linear, right top, left top, from(#eee), to(#707070));
+  background: linear-gradient(to left, #eee, #707070);
+  color: white;
+  width: 100%;
+  margin-bottom: 0;
+}
+.branches .map .gray {
+  width: 100%;
+  height: 20px;
+  border-right: 1px white solid;
+  background-color: #2F3240;
+}
+.branches .map .map_bind {
+  border-right: 1px white solid;
+  overflow: hidden;
+}
+.branches .map .map_bind iframe {
+  background-color: #333;
+}
+
+.contact {
+  background: #404550;
+  color: white;
+}
+.contact .container input[type=submit] {
+  position: relative !important;
+  z-index: 5;
+  background-color: #EDEDED;
+  border-radius: 20px;
+  padding: 3px 0;
+  border: none;
+  position: relative;
+  color: #2F3240;
+  z-index: 5;
+}
+.contact .container input[type=submit]::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: transparent;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+  border-radius: 20px;
+}
+.contact .container input[type=submit]:hover::after {
+  width: 100%;
+  height: 100%;
+  background-color: #D70000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+.contact .container input[type=submit]:hover {
+  color: white;
+}
+.contact .container h2 {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+.contact .container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.contact .container div p {
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contact .container .contact-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 30px;
+}
+.contact .container .contact-info .text-contact p {
+  width: 100%;
+  text-align: justify;
+  height: 55%;
+  overflow: scroll;
+  overflow: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.contact .container .contact-info .text-contact p::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.contact .container .form {
+  background: url("../image/UNIMARK-LOGO_icon-grey.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact .container .form form {
+  background-color: rgba(94, 99, 112, 0.6509803922);
+  border-radius: 40px;
+  position: relative;
+}
+.contact .container .form form hr {
+  margin: 0;
+  border-top: 3px solid #364A57;
+  opacity: 1;
+}
+.contact .container .form form .vl {
+  position: absolute;
+  border-left: 3px solid #364A57;
+  height: 100%;
+  top: 0;
+  left: 19%;
+}
+.contact .container .form form label {
+  text-align: center;
+  padding: 3px 25px 3px 10px;
+  text-transform: capitalize;
+  width: 20%;
+}
+.contact .container .form form input {
+  border-radius: 10px;
+  border: none;
+  width: 70%;
+  padding: 3px 0;
+  margin-top: 11px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+.contact .container .form form input:last-of-type {
+  padding: 5px 0;
+}
+.contact .container .form form textarea {
+  border-radius: 20px;
+}
+.contact .container .form button {
+  border-radius: 10px;
+  padding: 2px 15px;
+  background-color: #EDEDED;
+  border: none;
+  position: relative;
+  color: #D70000;
+  z-index: 5;
+}
+.contact .container .form button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: transparent;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+  border-radius: 10px;
+}
+.contact .container .form button:hover::after {
+  width: 100%;
+  height: 100%;
+  background-color: #D70000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+.contact .container .form button:hover {
+  color: #EDEDED;
+}
+
+footer {
+  background-color: #28282B;
+  color: white;
+}
+footer svg {
+  color: #D70000;
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+footer ul li {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+@-webkit-keyframes flashing {
+  0%, 40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+  }
+}
+
+@keyframes flashing {
+  0%, 40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+  }
+}
+.langselect {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: relative;
+}
+.langselect ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background-color: #eee;
+  display: none;
+  opacity: 0;
+}
+.langselect ul li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.langselect ul li a {
+  color: black;
+  text-decoration: none;
+}
+.langselect ul li a:hover {
+  color: white;
+}
+.langselect ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #333;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .menu-list {
+    display: none !important;
+  }
+  .menu-mobile {
+    display: block !important;
+  }
+}
+@media (max-width: 665px) {
+  .cover img {
+    -webkit-transform: translate(128%, -29%);
+            transform: translate(128%, -29%);
+  }
+  .carsoul {
+    max-height: 110px;
+  }
+}
+@media (max-width: 1081px) {
+  button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+    font-size: 40px !important;
+  }
+}
+.carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: transparent;
+  font-size: 50px;
+  color: #D70000;
+  border: none;
+  position: relative;
+}
+.carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
+  left: 18%;
+  top: 30%;
+  z-index: 10;
+}
+.carsoul button:not(:disabled):nth-child(3), .carsoul [type=button]:not(:disabled):nth-child(3), .carsoul [type=reset]:not(:disabled):nth-child(3), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(3) {
+  right: 14%;
+  bottom: 45%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.carsoul .slick-dots {
+  display: none !important;
+}
+.carsoul .slick-prev:before {
+  content: "" !important;
+  font-family: "FontAwesome" !important;
+  font-size: 22px;
+}
+.carsoul .slick-next:before {
+  content: "" !important;
+  font-family: "FontAwesome" !important;
+  font-size: 22px;
+}

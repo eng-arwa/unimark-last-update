@@ -1,0 +1,89 @@
+.home{
+    position: relative;
+    background: url('../images/domenico-loia-EhTcC9sYXsw-unsplash.png');
+    background-size:cover;
+   background-position: start;
+    background-repeat: no-repeat;
+   
+  max-width: 100%;
+  max-height: 100%;
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(238, 238, 238, 0.407);
+  }
+  .container{
+    padding: 0;
+    margin: 0;
+    .row{
+        .content{
+            width: 100%;
+            background-color: rgba(238, 238, 238, 0.449);
+            z-index: 4;
+            h3{
+                color: #323543;
+                font-weight: bolder;
+            }
+            p{
+                font-weight: 500;
+                max-height: 100px;
+                overflow: auto;
+                scroll-behavior: smooth;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;
+                
+            }
+            p::-webkit-scrollbar { 
+                display: none;  /* Safari and Chrome */
+            }
+        }
+    }
+    .space{
+        max-height: 100%;
+        button{
+          
+            background-color: #D70000;
+            
+           padding: 3px 5px;
+            border: none;
+            
+            font-size: .6rem;
+            position: relative;
+            color: #EDEDED;
+            z-index: 5;
+    
+            &::after{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 100%;
+                background-color: transparent;
+                left: 0;
+                bottom: 0;
+                transition: .5s;
+                z-index: -1;
+              
+
+            }
+            &:hover::after{
+                width: 100%;
+                height: 100%;
+                background-color:#EDEDED ;
+                transition: .5s;
+                z-index: -1;
+                
+
+            }
+            &:hover{
+                color: #D70000;
+            }
+        }
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.wrapper{
+    width:100%;
+    
+    text-align:center;
+  }
+
+  .carousel{
+    max-width:100%;
+    margin:0px auto;
+  }
+  .slick-slide{
+   
+  }
+  .slick-slide img{
+    width:100%;
+    border: 2px solid #fff;
+  }
+  .wrapper .slick-dots li button:before {
+    font-size:20px;
+    color:#eee;
+  }
+  .slick-dotted.slick-slider{
+    margin-bottom: 0 !important;
+  }
+  .slick-next.slick-arrow{
+    display: none !important;
+  }

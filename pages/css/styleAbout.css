@@ -1,0 +1,180 @@
+.about-us {
+  background-position: top;
+}
+.about-us .container .row p {
+  width: 80% !important;
+  text-align: justify !important;
+  height: 100px !important;
+  overflow: scroll !important;
+  overflow: auto !important;
+  scroll-behavior: smooth !important;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important;
+}
+.about-us .container .row p::-webkit-scrollbar {
+  display: none !important; /* Safari and Chrome */
+}
+.about-us .right .image {
+  position: relative;
+  overflow: hidden;
+}
+.about-us .right .image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10px;
+  z-index: 5;
+  height: 10px;
+  opacity: 1;
+}
+.about-us .right .image:hover img {
+  -webkit-transform: rotate(5deg) scale(1.1);
+          transform: rotate(5deg) scale(1.1);
+}
+.about-us .right .image:hover::before {
+  -webkit-animation: flashing 0.7s;
+          animation: flashing 0.7s;
+}
+.about-us .right .image img {
+  -webkit-transition: var(--maintranstion);
+  transition: var(--maintranstion);
+}
+
+.parent {
+  position: relative;
+}
+.parent .side {
+  position: absolute;
+}
+.parent .side img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.welcom {
+  color: white;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #d6d5d5), color-stop(80%, #707070));
+  background: linear-gradient(to top right, #d6d5d5 10%, #707070 80%);
+}
+.welcom .container .row {
+  overflow: hidden;
+}
+.welcom .container .row img {
+  max-width: 50%;
+  max-height: 100%;
+  overflow: hidden;
+}
+.welcom .container .rowimg {
+  max-width: 50%;
+}
+.welcom .container img {
+  max-width: 50%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.mission {
+  background-color: #eee;
+}
+.mission .container .row h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.mission .container .row img {
+  max-width: 100%;
+}
+.mission .container .row .Polygon {
+  max-width: 25% !important;
+}
+.mission .container .row p {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  max-width: 70%;
+}
+
+.overview {
+  background-color: #5A5A5A;
+  color: white;
+}
+.overview .container .row h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.overview .container .row img {
+  max-width: 100%;
+}
+.overview .container .row .Polygon {
+  max-width: 25% !important;
+}
+.overview .container .row p {
+  max-width: 70%;
+}
+
+.whous {
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #d6d5d5), color-stop(80%, #707070));
+  background: linear-gradient(to top right, #d6d5d5 10%, #707070 80%);
+  color: white;
+}
+.whous .container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.whous .container .row img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.whous .container .row p {
+  max-width: 90%;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  word-spacing: 1px;
+}
+
+.employ {
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #d6d5d5), color-stop(80%, #707070));
+  background: linear-gradient(to top right, #d6d5d5 10%, #707070 80%);
+  color: black;
+}
+.employ .container .row img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.employ .container p {
+  font-size: 10px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes flashing {
+  0%, 40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+@keyframes flashing {
+  0%, 40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+@media (max-width: 1390px) {
+  .welcom p, .overview p, .whous p, .mission p {
+    font-size: 0.6rem !important;
+  }
+}
