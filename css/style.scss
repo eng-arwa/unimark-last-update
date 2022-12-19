@@ -216,19 +216,19 @@ div{
 
 // start border
 .border{
-    background-color: #E6E6E6;
+    background-color: #F5F5F5;
     height: 70px;
     padding: 1px 0 1px 0;
     margin-top: 0;
-    border-bottom-left-radius: 25px;
+    // border-bottom-left-radius: 25px;
    border: none;
-    border-bottom-right-radius: 25px;
+    // border-bottom-right-radius: 25px;
 }
 // end border
 // strart about
 .about-us{
     background: url('../image/Layer\ 6.png')  ;
-    background-color: #575A61;
+    background-color: #E8E8E8;
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -271,7 +271,7 @@ div{
         img{
             max-width: 100%;
             border-radius: 50%;
-            border: 7px solid #555555;
+            border: 7px solid #EEEEEE;
         }
        
         
@@ -295,12 +295,12 @@ div{
                 
                 }
                 h3{
-                    color: white;
+                    color: black;
                     font-weight: 600;
 
                 }
                 p{
-                    color: white;
+                    color: black;
                     font-size: 1rem;
                 }
                 button{
@@ -352,7 +352,7 @@ div{
 
 // start carsoul
 .carsoul{
-    background-color: #403F3F;
+    background-color: #800000;
     z-index: 0;
   
     .left-1{
@@ -388,7 +388,50 @@ div{
     }
 }
 // end carsoul
+.our-patners{
+    position: relative;
+    background: url(../image/UNIMARK-LOGO_icon-grey.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    .overlay{
+        position: absolute;
+        background: linear-gradient(to bottom, #fff, #E3E3E3);
+      z-index: -2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .row{
+        
+    }
+    h5{
+        padding: 10px 0;
+        background-color: #EDEDED;
+        text-align: center;
+        font-weight:100;
+        color: #333;
+        margin: 0 ;
 
+    }
+    img{
+        max-width: 50%;
+        max-height: 100%;
+    }
+
+    .border-img{
+        border-right: 2px solid #CBCBCB;
+        border-bottom: 2px #CBCBCB solid;
+        &:last-child, &:nth-child(4),&:nth-child(8){
+            border-right: none;
+        }
+        &:last-child, &:nth-child(9),&:nth-child(10),&:nth-child(11){
+        border-bottom: none !important;
+    
+    }}
+    
+}
 // start carsoul
 .services{
     position: relative;
@@ -569,7 +612,7 @@ div{
     
     // start contact
     .contact{
-        background:  #404550;
+        background:  linear-gradient(to bottom,#999999,#9C9C9C) ;
         
      
         color: white;
@@ -661,19 +704,19 @@ div{
             background-repeat: no-repeat;
             background-size: cover;
                 form{
-                    background-color: #5e6370a6;
+                    background-color: #B7B7B7;
                     // padding: 10px 20px;
                     border-radius: 40px;
                     position: relative;
                     hr{
                         margin: 0;
-                        border-top: 3px solid #364A57;
+                        border-top: 3px solid #969C9F;
                         opacity: 1;
                         
                     }
                     .vl {
                         position: absolute;
-                        border-left: 3px solid #364A57;
+                        border-left: 3px solid #969C9F;
                         height: 100%;
                         top: 0;
                         left: 19%;
@@ -853,7 +896,7 @@ footer{
     //     top: 11% !important;
     //    bottom: 0 !important;
     }
-    button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+    .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
        
         font-size: 40px !important;}
 }

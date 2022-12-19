@@ -173,18 +173,16 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .border {
-  background-color: #E6E6E6;
+  background-color: #F5F5F5;
   height: 70px;
   padding: 1px 0 1px 0;
   margin-top: 0;
-  border-bottom-left-radius: 25px;
   border: none;
-  border-bottom-right-radius: 25px;
 }
 
 .about-us {
   background: url("../image/Layer 6.png");
-  background-color: #575A61;
+  background-color: #E8E8E8;
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -228,7 +226,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 .right img {
   max-width: 100%;
   border-radius: 50%;
-  border: 7px solid #555555;
+  border: 7px solid #EEEEEE;
 }
 
 .left h5 {
@@ -244,11 +242,11 @@ nav .container .menu-list .parent:hover .logo-1 {
   max-height: 80%;
 }
 .left .container .row h3 {
-  color: white;
+  color: black;
   font-weight: 600;
 }
 .left .container .row p {
-  color: white;
+  color: black;
   font-size: 1rem;
 }
 .left .container .row button {
@@ -292,7 +290,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .carsoul {
-  background-color: #403F3F;
+  background-color: #800000;
   z-index: 0;
 }
 .carsoul .left-1 {
@@ -322,6 +320,46 @@ nav .container .menu-list .parent:hover .logo-1 {
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
+}
+
+.our-patners {
+  position: relative;
+  background: url(../image/UNIMARK-LOGO_icon-grey.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.our-patners .overlay {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#E3E3E3));
+  background: linear-gradient(to bottom, #fff, #E3E3E3);
+  z-index: -2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.our-patners h5 {
+  padding: 10px 0;
+  background-color: #EDEDED;
+  text-align: center;
+  font-weight: 100;
+  color: #333;
+  margin: 0;
+}
+.our-patners img {
+  max-width: 50%;
+  max-height: 100%;
+}
+.our-patners .border-img {
+  border-right: 2px solid #CBCBCB;
+  border-bottom: 2px #CBCBCB solid;
+}
+.our-patners .border-img:last-child, .our-patners .border-img:nth-child(4), .our-patners .border-img:nth-child(8) {
+  border-right: none;
+}
+.our-patners .border-img:last-child, .our-patners .border-img:nth-child(9), .our-patners .border-img:nth-child(10), .our-patners .border-img:nth-child(11) {
+  border-bottom: none !important;
 }
 
 .services {
@@ -445,7 +483,8 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .contact {
-  background: #404550;
+  background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#9C9C9C));
+  background: linear-gradient(to bottom, #999999, #9C9C9C);
   color: white;
 }
 .contact .container input[type=submit] {
@@ -530,18 +569,18 @@ nav .container .menu-list .parent:hover .logo-1 {
   background-size: cover;
 }
 .contact .container .form form {
-  background-color: rgba(94, 99, 112, 0.6509803922);
+  background-color: #B7B7B7;
   border-radius: 40px;
   position: relative;
 }
 .contact .container .form form hr {
   margin: 0;
-  border-top: 3px solid #364A57;
+  border-top: 3px solid #969C9F;
   opacity: 1;
 }
 .contact .container .form form .vl {
   position: absolute;
-  border-left: 3px solid #364A57;
+  border-left: 3px solid #969C9F;
   height: 100%;
   top: 0;
   left: 19%;
@@ -717,7 +756,7 @@ footer ul li {
   }
 }
 @media (max-width: 1081px) {
-  button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+  .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
     font-size: 40px !important;
   }
 }
