@@ -105,7 +105,7 @@ transform: translateY(60%);
     max-height: 35%;
     left: 11%;
     top: -10%;
-    transform: translate(130%,-21%);
+    transform: translate(128%,-32%);
 }
 .arrow img{
     z-index: 5;
@@ -185,9 +185,9 @@ transform: translateY(60%);
 .button .all .top{
     cursor: pointer;
     position: absolute;
-    left: 48%;
+    left: 49%;
     top: 50%;
-    transform: translateY(53px);
+    transform: translateY(50px);
 
     cursor: pointer;
     
@@ -197,7 +197,7 @@ transform: translateY(60%);
     cursor: pointer;
     color: white;
     padding: 0;
-    font-size: 45px;
+    font-size: 31px;
     transform: rotate(90deg);
 }
     
@@ -205,31 +205,27 @@ transform: translateY(60%);
 
 
 
-@media (max-width:969px) {
-    .slick-slide p  {
-        font-size: .6rem;
-    }
-    .slick-slide h4 {
-         font-size: .8rem;
-    }
-    .slick-slide h1{
-        font-size: 2rem;
-    }
-}
-@media (max-width:767px) {
-    .traingale img{
-        max-width: 25%;
-        
-    }
-    .cover img{
-   
-    left: 11%;
-    top: -10%;
-    transform: translate(128%,-3%);
-    }
-}
 
-@media (max-width:667px) {
+
+/* @media (max-width:667px) {
+    .slick-slide h4{
+        font-size: 1rem;
+
+     }
+.slick-slide h1{         font-size: 1.2rem !important;
+     }
+    .slick-slide p{
+        font-size: .7rem;
+     }
+     .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+         font-size: 20px !important;
+     }
+     .top svg{
+        font-size: 30px ;
+    }
+     .top{
+         transform: translateY(35px) ;     }    
+       
     .arrow{
         transform: translate(-55%,-50%);
     }
@@ -249,10 +245,27 @@ transform: translateY(60%);
                     .button .all span:nth-child(2){
                         transform: translate(-44%,100%);
                     }
-}
+} */
 .slick-slide h4 {
     font-size: 1rem;
+    text-align: center;
 }
 .slick-slide p {
     font-size: .8rem;
+    text-align: center;
 }
+.slick-slide h4{
+
+    text-align: center;
+}
+
+/* media */
+
+/* media new */
+
+
+
+
+
+
+

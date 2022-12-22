@@ -58,8 +58,8 @@
 
 .welcom {
   color: white;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #d6d5d5), color-stop(80%, #707070));
-  background: linear-gradient(to top right, #d6d5d5 10%, #707070 80%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #C91414), color-stop(80%, #640404));
+  background: linear-gradient(to top right, #C91414 10%, #640404 80%);
 }
 .welcom .container .row {
   overflow: hidden;
@@ -92,14 +92,14 @@
   max-width: 25% !important;
 }
 .mission .container .row p {
-  font-size: 2rem;
+  font-size: 1.2rem;
   letter-spacing: 5px;
   word-spacing: 5px;
   max-width: 70%;
 }
 
 .overview {
-  background-color: #5A5A5A;
+  background-color: #CDCDCE;
   color: white;
 }
 .overview .container .row h1 {
@@ -120,6 +120,11 @@
   background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #d6d5d5), color-stop(80%, #707070));
   background: linear-gradient(to top right, #d6d5d5 10%, #707070 80%);
   color: white;
+}
+.whous div {
+  background: url("../images/john-schnobrich-FlPc9_VocJ4-unsplash.png");
+  height: 260px;
+  background-size: cover;
 }
 .whous .container {
   padding: 0 !important;
@@ -175,6 +180,6 @@
 }
 @media (max-width: 1390px) {
   .welcom p, .overview p, .whous p, .mission p {
-    font-size: 0.6rem !important;
+    font-size: 1rem !important;
   }
 }

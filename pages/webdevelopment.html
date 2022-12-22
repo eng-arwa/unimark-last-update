@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/unimark.png" type="image/x-icon">
     <title>Web Development</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/normalize.css">
@@ -55,24 +56,31 @@
             </label>
         
             <ul class="menu__box pt-5">
-              
-                <li class="pt-5  ps-5"><a href="#home">home</a></li>
-                <li class=" ps-5"><a href="#about">about us</a>
+                <li class="pt-5">
+                    <div class="search-wrapper">
+                      <div class="input-holder">
+                          <input type="text" class="search-input" placeholder="Type to search" />
+                          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                      </div>
+                      <span class="close" onclick="searchToggle(this, event);"></span>
+                  </div>
+                   </li>
+                <li class="pt-5  ps-5"><a href="../index.html">home</a></li>
+                <li class=" ps-5"><a href="./aboutUs.html">about us</a>
                 </li>
             
                 
                
-                <li class=" ps-5"><a href="#services">services</a></li>
-                <li class=" ps-5"><a href="#contact">contact us</a></li>
-                <li>
-                 <div class="search-wrapper">
-                   <div class="input-holder">
-                       <input type="text" class="search-input" placeholder="Type to search" />
-                       <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-                   </div>
-                   <span class="close" onclick="searchToggle(this, event);"></span>
-               </div>
-                </li>
+                <li class=" ps-5"><a href="./services.html">services</a></li>
+                <li class=" ps-5"><a href="./contactUs.html">contact us</a></li>
+              
+                <li class="ps-3">  <div class="d-flex">
+                    <span><i class="fa-solid fa-globe"></i></span>
+                  <ul class="d-flex">
+                    <li><a href="../rtl/pages/webdevelopment-rtl.html">arabic</a></li>
+                    <li><a href="./webdevelopment.html">english</a></li>
+                  </ul>
+                </div></li>
                 
        
             </ul>

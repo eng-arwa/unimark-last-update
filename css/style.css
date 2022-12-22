@@ -24,16 +24,16 @@ nav .container .menu-mobile .logo {
   background: url("../image/UNIMARK LOGO.png");
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  width: 60px;
-  height: 20px;
+  width: 125px;
+  height: 28px;
   margin: auto;
-  background-size: 60px 20px;
+  background-size: 125px 28px;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 nav .container .menu-mobile .logo:hover {
   background: url("../image/Path 12.png");
-  background-size: 20px 20px;
+  background-size: 31px 28px;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -92,16 +92,16 @@ nav .container .menu-list li .logo {
   background: url("../image/UNIMARK LOGO.png");
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  width: 60px;
-  height: 20px;
+  width: 125px;
+  height: 28px;
   margin: auto;
-  background-size: 60px 20px;
+  background-size: 125px 28px;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 nav .container .menu-list li .logo:hover {
   background: url("../image/Path 12.png");
-  background-size: 20px 20px;
+  background-size: 31px 28px;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -173,7 +173,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .border {
-  background-color: #F5F5F5;
+  background-color: inherit;
   height: 70px;
   padding: 1px 0 1px 0;
   margin-top: 0;
@@ -291,7 +291,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 
 .carsoul {
   background-color: #800000;
-  z-index: 0;
+  z-index: 3;
 }
 .carsoul .left-1 {
   background: url("../image/left-1.png");
@@ -324,7 +324,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 
 .our-patners {
   position: relative;
-  background: url(../image/UNIMARK-LOGO_icon-grey.png);
+  background: url(../image/UNIMARK-LOGO_icon-grey.png) #E9E9E9;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -341,7 +341,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 .our-patners h5 {
   padding: 10px 0;
-  background-color: #EDEDED;
+  background-color: #F3F3F3;
   text-align: center;
   font-weight: 100;
   color: #333;
@@ -482,6 +482,10 @@ nav .container .menu-list .parent:hover .logo-1 {
   background-color: #333;
 }
 
+.slick-slide h4, .slick-slide p {
+  text-align: center;
+}
+
 .contact {
   background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#9C9C9C));
   background: linear-gradient(to bottom, #999999, #9C9C9C);
@@ -613,7 +617,7 @@ nav .container .menu-list .parent:hover .logo-1 {
   background-color: #EDEDED;
   border: none;
   position: relative;
-  color: #D70000;
+  color: black;
   z-index: 5;
 }
 .contact .container .form button::after {
@@ -746,16 +750,7 @@ footer ul li {
     display: block !important;
   }
 }
-@media (max-width: 665px) {
-  .cover img {
-    -webkit-transform: translate(128%, -29%);
-            transform: translate(128%, -29%);
-  }
-  .carsoul {
-    max-height: 110px;
-  }
-}
-@media (max-width: 1081px) {
+@media (min-width: 1081px) {
   .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
     font-size: 40px !important;
   }
@@ -765,21 +760,21 @@ footer ul li {
   width: -moz-fit-content;
   width: fit-content;
   background: transparent;
-  font-size: 50px;
+  font-size: 29px;
   color: #D70000;
   border: none;
   position: relative;
 }
 .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
-  left: 18%;
-  top: 30%;
+  right: 11%;
+  top: 31%;
   z-index: 10;
-}
-.carsoul button:not(:disabled):nth-child(3), .carsoul [type=button]:not(:disabled):nth-child(3), .carsoul [type=reset]:not(:disabled):nth-child(3), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(3) {
-  right: 14%;
-  bottom: 45%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+.carsoul button:not(:disabled):nth-child(3), .carsoul [type=button]:not(:disabled):nth-child(3), .carsoul [type=reset]:not(:disabled):nth-child(3), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(3) {
+  left: 16%;
+  bottom: 45%;
 }
 .carsoul .slick-dots {
   display: none !important;

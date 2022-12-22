@@ -1,0 +1,120 @@
+@media (min-width: 1025px) { 
+    /* big landscape tablets, laptops, and desktops */
+
+    .carsoul{
+        max-height: 200px !important;
+    } 
+    .slick-slide p{
+        font-size:1rem !important;
+    }
+    .slick-slide h1{
+        font-size:2.3rem !important;
+    }
+    .slick-slide h4{
+        font-size: 1.5rem !important;
+    }
+    .button .all .top {
+
+        left: 50% !important;
+        transform: translateY(85px) !important;
+    }
+    .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
+        
+        top: 28% !important;
+    }
+}
+
+/* medua */
+
+@media (min-width:320px)  { 
+    .carsoul{
+        max-height: 120px;
+    } 
+    .slick-slide p{
+        font-size: .4rem;
+    }
+    .slick-slide h1{
+        font-size:1rem;
+    }
+    .slick-slide h4{
+        font-size: .7rem;
+    }
+    .carsoul .content{
+        transform: translateY(-42%);
+    }
+    .arrow {
+        transform: translate(-64%,-44%) !important;
+    }
+    .arrow img{
+        width: 100% !important;
+    }
+    .cover img {
+        transform: translate(94%,-15%) !important;
+        max-width: 35% !important;
+    }
+
+    .button .all .top {
+        
+        transform: translateY(30px);}
+        .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
+            right: 22%;
+            top: -15%;
+            transform: rotate(360deg);
+        }
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+}
+
+@media (min-width:481px)  {
+     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  {
+    .cover img {
+        transform: translate(-93%,-29%) !important;}
+        .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
+            right: 29%;}
+     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { 
+    .carsoul{
+        max-height: 200px !important;
+    } 
+    .carsoul .content{
+        transform: translateY(-50% ) !important;
+    }
+
+    .arrow{
+       
+        transform: translate(-75%,-50% ) !important;
+    }
+    .arrow img{
+        width: 80% !important;
+    }
+   
+    .cover img {
+        max-width: 28% !important;
+        max-height: 35% !important;
+        right: 11% !important;
+        top: -10% !important;
+        transform: translate(-128%,-32%) !important;
+    }
+
+    .button .all .top {
+        
+        left: 49% ;
+    top: 50% ;
+    transform: translateY(50px) ;}
+        .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
+            right: 34% ;}
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+
+    /* smartphones, iPhone, 
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px){
+
+
+}

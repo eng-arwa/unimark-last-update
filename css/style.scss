@@ -26,16 +26,16 @@ nav{
             .logo {
                 background: url('../image/UNIMARK\ LOGO.png');
                 transition: all 0.3s ease-in;
-                width: 60px;
-                height: 20px;
+                width: 125px;
+                height: 28px;
                 margin: auto;
-                background-size: 60px 20px;
+                background-size: 125px 28px;
                 background-position: 0 0;
                 background-repeat: no-repeat;
               }
               .logo:hover {
                 background: url('../image/Path\ 12.png');
-                background-size: 20px 20px;
+                background-size: 31px 28px;
                 background-position: center center;
                 background-repeat: no-repeat;
               }
@@ -104,16 +104,17 @@ nav{
                     .logo {
                         background: url('../image/UNIMARK\ LOGO.png');
                         transition: all 0.3s ease-in;
-                        width: 60px;
-                        height: 20px;
+                        width: 125px;
+                        height: 28px;
                         margin: auto;
-                        background-size: 60px 20px;
+                        background-size: 125px 28px;
                         background-position: 0 0;
                         background-repeat: no-repeat;
                       }
                       .logo:hover {
                         background: url('../image/Path\ 12.png');
-                        background-size: 20px 20px;
+                 
+                       background-size: 31px 28px;
                         background-position: center center;
                         background-repeat: no-repeat;
                       }
@@ -216,7 +217,7 @@ div{
 
 // start border
 .border{
-    background-color: #F5F5F5;
+    background-color: inherit;
     height: 70px;
     padding: 1px 0 1px 0;
     margin-top: 0;
@@ -353,7 +354,7 @@ div{
 // start carsoul
 .carsoul{
     background-color: #800000;
-    z-index: 0;
+    z-index: 3;
   
     .left-1{
         background:url('../image/left-1.png');
@@ -390,13 +391,13 @@ div{
 // end carsoul
 .our-patners{
     position: relative;
-    background: url(../image/UNIMARK-LOGO_icon-grey.png);
+    background: url(../image/UNIMARK-LOGO_icon-grey.png) #E9E9E9;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
     .overlay{
         position: absolute;
-        background: linear-gradient(to bottom, #fff, #E3E3E3);
+        background: linear-gradient(to bottom, #fff , #E3E3E3);
       z-index: -2;
         left: 0;
         top: 0;
@@ -408,7 +409,7 @@ div{
     }
     h5{
         padding: 10px 0;
-        background-color: #EDEDED;
+        background-color:#F3F3F3;
         text-align: center;
         font-weight:100;
         color: #333;
@@ -609,7 +610,9 @@ div{
      
     }
     // end our braches
-    
+    .slick-slide h4 , .slick-slide p{
+        text-align: center;
+    }
     // start contact
     .contact{
         background:  linear-gradient(to bottom,#999999,#9C9C9C) ;
@@ -756,7 +759,7 @@ div{
                 
                    border: none;
                    position: relative;
-                   color: #D70000;
+                   color: black;
                    z-index: 5;
                    &::after{
                     content: '';
@@ -881,16 +884,8 @@ footer{
         display: block !important;
     }
 }
-@media (max-width:665px) {
-    .cover img{
-        transform: translate(128%,-29%);
-    }
-    .carsoul{
-        max-height: 110px;
-    }
-  
-}
-@media (max-width:1081px) {
+
+@media (min-width:1081px) {
     .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
     //     right: 26% !important;
     //     top: 11% !important;
@@ -907,19 +902,20 @@ footer{
    
         width: fit-content;
         background: transparent;
-        font-size: 50px;
+        font-size: 29px;
         color: #D70000;
         border: none;
         position: relative;
         &:nth-child(1){
-            left: 18%;
-            top: 30%;
+            right: 11%;
+            top: 31%;
             z-index: 10;
+            transform: rotate(180deg)
         }
         &:nth-child(3){
-            right: 14%;
+            left: 16%;
             bottom: 45%;
-            transform: rotate(180deg)
+           
         
         }
       
@@ -938,4 +934,8 @@ footer{
         font-size: 22px;
     }
 }
+
+
+
+// media
 
