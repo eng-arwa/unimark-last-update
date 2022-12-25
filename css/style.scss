@@ -687,7 +687,8 @@ div{
                     p{
                         width: 100%;
                         text-align: justify;
-                    height: 55%;
+                    min-height: 550px;
+                    max-height: 550px;
                     overflow: scroll;
                     overflow: auto;
                     scroll-behavior: smooth;
