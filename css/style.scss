@@ -12,12 +12,12 @@ body{
 }
 // start nav
 nav{
-    background: linear-gradient(#fffbfb,#a7a7a7) !important;
- 
-    border-bottom-left-radius: 25px;
+    // background: linear-gradient(#fffbfb,#a7a7a7) !important;
+ background-color: white;
+    // border-bottom-left-radius: 25px;
     
    max-width: 100%;
-    border-bottom-right-radius: 25px;
+    // border-bottom-right-radius: 25px;
 
     width: 100%;
     .container{
@@ -229,14 +229,20 @@ div{
 // strart about
 .about-us{
     background: url('../image/Layer\ 6.png')  ;
-    background-color: #E8E8E8;
+    background-color: black;
     background-position: bottom;
+   
     background-size: contain;
+    color: white;
     background-repeat: no-repeat;
     position: relative;
     .box{
         position: relative;
         overflow: hidden;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 100%;
         &::before{
             content: "";
             position: absolute;
@@ -251,12 +257,17 @@ div{
             opacity: 1;
             
         }
-        &:hover img{
-            transform: rotate(15deg) scale(1);
+        .arrow-cover{
+            position: absolute;
+            left: 15%;
+            top: 16%;
+            width: 75%;
+        
+
+            // 
+            
         }
-        &:hover::before{
-            animation: flashing 0.7s ;
-        }
+        
     }
     }
     .overlay{
@@ -271,8 +282,7 @@ div{
     
         img{
             max-width: 100%;
-            border-radius: 50%;
-            border: 7px solid #EEEEEE;
+           
         }
        
         
@@ -281,7 +291,7 @@ div{
         h5{
             text-align: right;
             letter-spacing: 2px;
-            color: #D70000;
+            color: white;
             font-size: 3rem;
             font-weight: normal;
            
@@ -296,12 +306,12 @@ div{
                 
                 }
                 h3{
-                    color: black;
+                    color: white;
                     font-weight: 600;
 
                 }
                 p{
-                    color: black;
+                    color: white;
                     font-size: 1rem;
                 }
                 button{
@@ -352,8 +362,47 @@ div{
 // end about
 
 // start carsoul
+.services-arrow{
+    background-color: #5E5E5E;
+    .shape{
+        position: relative;
+        background: url(../imageslidshow/background\ video.png);
+        background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    }
+    img{
+        width: 10%;
+    }
+    h4{
+        font-size: 1.2rem;
+        color: white;
+    }
+    p{
+        font-size: .7rem;
+        color: white;
+    }
+    .arrow-cover{
+        position: absolute;
+        left: 31%;
+        width: 40%;
+    }
+}
+.headtitle{
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: 4px;
+
+}
+.parent-carsoul{
+    padding-top: 100px;
+ 
+    padding-bottom: 130px;
+    background: black;
+}
 .carsoul{
-    background-color: #800000;
+    background-color: black;
     z-index: 3;
   
     .left-1{
@@ -409,10 +458,11 @@ div{
     }
     h5{
         padding: 10px 0;
-        background-color:#F3F3F3;
+        // background-color:#F3F3F3;
         text-align: center;
-        font-weight:100;
-        color: #333;
+        font-weight:normal;
+        font-size: 3rem;
+        color: rgb(105, 104, 104);
         margin: 0 ;
 
     }
@@ -584,9 +634,12 @@ div{
     // strart our branches
     .branches{
      
+        padding-top: 20px;
         h3{
-            background:linear-gradient(to left, #eee, #707070);
-            color: white;
+            padding-top: 20px;
+           font-size: 3rem;
+           font-weight: normal;
+            color: #787474;
             width: 100%;
             margin-bottom: 0;
          }
@@ -615,7 +668,7 @@ div{
     }
     // start contact
     .contact{
-        background:  linear-gradient(to bottom,#999999,#9C9C9C) ;
+       background-color: black;
         
      
         color: white;
@@ -679,6 +732,8 @@ div{
             .contact-info{
                 width: 100%;
                 display: flex;
+                min-height: 144px;
+                max-height: 144px;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 gap: 30px;
@@ -687,8 +742,8 @@ div{
                     p{
                         width: 100%;
                         text-align: justify;
-                    min-height: 550px;
-                    max-height: 550px;
+                    
+                    max-height: 144px;
                     overflow: scroll;
                     overflow: auto;
                     scroll-behavior: smooth;
@@ -707,20 +762,21 @@ div{
                 background-position:  right;
             background-repeat: no-repeat;
             background-size: cover;
-                form{
-                    background-color: #B7B7B7;
+                .forminput{
+                  
+                    background-color: #2E2E2E;
                     // padding: 10px 20px;
-                    border-radius: 40px;
+                    border-radius: 23px;
                     position: relative;
                     hr{
                         margin: 0;
-                        border-top: 3px solid #969C9F;
+                        border-top: 3px solid black;
                         opacity: 1;
                         
                     }
                     .vl {
                         position: absolute;
-                        border-left: 3px solid #969C9F;
+                        border-left: 3px solid black;
                         height: 100%;
                         top: 0;
                         left: 19%;
@@ -734,16 +790,20 @@ div{
                     
                     }
                     input{
-                        border-radius: 10px;
+                        border-radius: 15px;
                         border: none;
                         width: 70%;
-                        padding: 3px 0;
+                        padding: 10px 0;
                         margin-top: 11px;
                         margin-bottom: 10px;
-                        margin-right: 5px;
+                        margin-left: 10px;
                         padding-right: 5px;
+                        height: 38px;
                         &:last-of-type{
                             padding: 5px 0;
+                        }
+                        &:last-child{
+                            height: 50px;
                         }
 
 
@@ -940,3 +1000,9 @@ footer{
 
 // media
 
+@media (max-width:662px) {
+    html{
+        
+        font-size: 13px;
+    }
+}

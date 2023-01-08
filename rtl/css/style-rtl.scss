@@ -1,5 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+.search-wrapper .input-holder .search-icon{
+    float: left;
+}
+// .search-wrapper.active .close {
+//     right: 14px;
+//     transform: rotate(45deg) translate(-151px,156px);
+//     transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+//     transition-delay: 0.5s;
+// }
 
+.img-arrow{
+    max-width: 10% !important;
+    position:absolute;
+    left: 0;
+    transform: rotateY(-558deg);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+.left .container .row img {
+    max-width: 100%;
+    max-height: 80%;
+    transform: rotateY(-179deg);}
+
+    .forminput input{
+        margin-right: 10px;
+    }
+
+  
+    .border-img{
+        border-left: 2px solid #CBCBCB;
+        border-right: none;
+    
+        &:last-child, &:nth-child(1),&:nth-child(8),&:nth-child(4),&:nth-child(5){
+            border-left: none;
+            border-right: none;
+        }
+        &:last-child, &:nth-child(9),&:nth-child(10),&:nth-child(11){
+        border-bottom: none !important;
+        border-right: none;
+    
+    }}
+    
+
+        
 body{
     font-family: 'Amiri', serif !important;
 }
@@ -13,6 +55,10 @@ body{
            
         
         }
+        .contact .container .form .forminput .vl {
+           
+            border-right: 3px solid black;
+        border-left: 0;}
 
 #menu__toggle:checked ~ .menu__box {
     right: 0 !important;

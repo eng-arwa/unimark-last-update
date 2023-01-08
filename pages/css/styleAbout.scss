@@ -1,3 +1,9 @@
+
+.img-arrow{
+    max-width: 10% !important;
+    position:absolute;
+    right: 0;
+}
 .about-us{
     background-position:top;
 
@@ -68,7 +74,8 @@
 }
 .welcom{
     color: white;
-  background:linear-gradient(to top right,#C91414 10%, #640404 80%);
+    background-color: black;
+//   background:linear-gradient(to top right,#C91414 10%, #640404 80%);
   .container{
 
     .row{
@@ -121,8 +128,8 @@ background-color: #eee;
     }
 }
 .overview{
-    background-color: #CDCDCE;
-    color: white;
+    // background-color: #CDCDCE;
+    color: black;
         .container{
             .row{
                 h1{

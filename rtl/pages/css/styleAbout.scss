@@ -8,12 +8,12 @@
             p{
                 width: 80% !important;
                 text-align: justify !important;
-            height: 100px !important;
-            overflow: scroll !important;
-            overflow: auto !important;
-            scroll-behavior: smooth !important;
-            -ms-overflow-style: none !important;  /* IE and Edge */
-            scrollbar-width: none !important;
+            max-height: 150px !important;
+            overflow: scroll;
+        
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;
         
             }
             p::-webkit-scrollbar { 
@@ -68,7 +68,8 @@
 }
 .welcom{
     color: white;
-  background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
+    background-color: black;
+//   background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
   .container{
 
     .row{
@@ -96,7 +97,7 @@
 }
 
 .mission{
-background-color: #eee;
+// background-color: #eee;
     .container{
         .row{
             h1{
@@ -109,6 +110,8 @@ background-color: #eee;
             .Polygon{
        
                 max-width: 25% !important;
+                
+                    transform: rotateY(-194deg);
            
         }
         p{
@@ -121,8 +124,8 @@ background-color: #eee;
     }
 }
 .overview{
-    background-color: #5A5A5A;
-    color: white;
+    // background-color: #5A5A5A;
+    color: black;
         .container{
             .row{
                 h1{
@@ -145,27 +148,33 @@ background-color: #eee;
         }
     }
 
-.whous{
-    background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
-   color: white;
-    .container{
-        padding: 0 !important;
-        margin: 0 !important;
-        .row{
-
-            img{
-                max-width: 100%;
-                max-height: 100%;
-            }
-            p{
-                max-width: 90%;
-                letter-spacing: 2px;
-                font-size: 1.3rem;
-                word-spacing: 1px;
+    .whous{
+        background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
+       color: white;
+       div{
+        background: url('../images/john-schnobrich-FlPc9_VocJ4-unsplash.png');
+    
+        height: 260px;
+        background-size: cover;
+    }
+        .container{
+            padding: 0 !important;
+            margin: 0 !important;
+            .row{
+      
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                p{
+                    max-width: 90%;
+                    letter-spacing: 2px;
+                    font-size: 1.3rem;
+                    word-spacing: 1px;
+                }
             }
         }
     }
-}
 .employ{
     background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
  color: black;

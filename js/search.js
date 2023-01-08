@@ -1,4 +1,8 @@
-function searchToggle(obj, evt){
+
+window.onload = () => {
+    document.getElementById('textsearch').value = '';
+}
+function searchToggle(obj, evt) {
      
     var container = $(obj).closest('.search-wrapper');
         if(!container.hasClass('active')){
@@ -12,4 +16,34 @@ function searchToggle(obj, evt){
             container.find('.search-input').val('');
             document.querySelector('.close').style.opacity='0';
         }
+    }
+
+    function search() {
+       
+        let textsearch = document.getElementById('textsearch').value;
+        let paragraph =document.querySelectorAll('p');
+      
+      console.log(textsearch.length)
+        if (textsearch.length > 0) {
+            paragraph.forEach((e ,index) => {
+                textsearch = textsearch.replace(/[.**?^${}()|[\]\\]/g,"\\$&");
+               
+                let pattern = new RegExp(`${textsearch}`, "gi");
+               
+               e.innerHTML = e.textContent.replace(pattern, match => `<mark class='mark'>${match}</mark>`)
+                    
+        
+               
+            })
+        }
+        
+        else {
+          
+            document.querySelectorAll('mark').forEach(e => {
+                e.remove()
+            });
+        }
+        
+        
+       
     }

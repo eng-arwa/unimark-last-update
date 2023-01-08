@@ -1,4 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+.search-wrapper .input-holder .search-icon {
+  float: left;
+}
+
+.img-arrow {
+  max-width: 10% !important;
+  position: absolute;
+  left: 0;
+  -webkit-transform: rotateY(-558deg);
+          transform: rotateY(-558deg);
+}
+
+.left .container .row img {
+  max-width: 100%;
+  max-height: 80%;
+  -webkit-transform: rotateY(-179deg);
+          transform: rotateY(-179deg);
+}
+
+.forminput input {
+  margin-right: 10px;
+}
+
+.border-img {
+  border-left: 2px solid #CBCBCB;
+  border-right: none;
+}
+.border-img:last-child, .border-img:nth-child(1), .border-img:nth-child(8), .border-img:nth-child(4), .border-img:nth-child(5) {
+  border-left: none;
+  border-right: none;
+}
+.border-img:last-child, .border-img:nth-child(9), .border-img:nth-child(10), .border-img:nth-child(11) {
+  border-bottom: none !important;
+  border-right: none;
+}
+
 body {
   font-family: "Amiri", serif !important;
 }
@@ -13,6 +49,11 @@ body {
 
 .menu__btn {
   right: 20px;
+}
+
+.contact .container .form .forminput .vl {
+  border-right: 3px solid black;
+  border-left: 0;
 }
 
 #menu__toggle:checked ~ .menu__box {

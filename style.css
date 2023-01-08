@@ -1,11 +1,14 @@
 
 
 .carsoul{
-    background-color: rgba(51, 51, 51, 0.57) ;
+    background: black ;
+    background-size: contain;
     max-width: 100%;
+    min-width: 100%;
     height:200px;
-    
+    background-repeat: no-repeat;
     position: relative;
+    background-position: center;
    
    
 }
@@ -22,20 +25,20 @@
 }
 .traingale img:first-child{
     position: absolute;
-    left: 0%;
+    left: -10%;
     max-width: 62%;
     max-height: 101%;
     transform: rotate(180deg);
 }
 .traingale img:nth-child(2){
     position: absolute;
-    left: 19%;
+    left: 9%;
     max-width: 100%;
     max-height: 100%;
 }
 .traingale img:nth-child(3){
     position: absolute;
-    right: -5%;
+    right: -10%;
     max-width: 100%;
     max-height: 100%;
     position: absolute;
@@ -47,7 +50,7 @@
 
 .traingale img:last-child{
     position: absolute;
-    right: 14%;
+    right: 9%;
     max-width: 100%;
     max-height: 100%;
 }

@@ -1,13 +1,13 @@
 .home {
   position: relative;
-  background: url("../images/domenico-loia-EhTcC9sYXsw-unsplash.png");
+  background: white !important;
+  color: black !important;
   background-size: cover;
   background-position: start;
   background-repeat: no-repeat;
   max-width: 100%;
   max-height: 100%;
 }
-
 .home .overlay {
   position: absolute;
   width: 100%;
@@ -15,80 +15,65 @@
   z-index: -1;
   background-color: rgba(238, 238, 238, 0.407);
 }
-
-.home .container {
+.home .container-fluid {
   padding: 0;
   margin: 0;
 }
-
-.home .container .row .content {
+.home .container-fluid .row .content {
   width: 100%;
-  background-color: rgba(238, 238, 238, 0.449);
   z-index: 4;
 }
-
-.home .container .row .content h3 {
+.home .container-fluid .row .content h3 {
   color: #323543;
   font-weight: bolder;
 }
-
-.home .container .row .content p {
+.home .container-fluid .row .content p {
   font-weight: 500;
   max-height: 100px;
   overflow: auto;
   scroll-behavior: smooth;
-  -ms-overflow-style: none;
-  /* IE and Edge */
+  -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 }
-
-.home .container .row .content p::-webkit-scrollbar {
-  display: none;
-  /* Safari and Chrome */
+.home .container-fluid .row .content p::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
-
-.home .container .space {
+.home .container-fluid .space {
   max-height: 100%;
 }
-
-.home .container .space button {
+.home .container-fluid .space button {
   background-color: #D70000;
   padding: 3px 5px;
   border: none;
-  font-size: .6rem;
+  font-size: 0.6rem;
   position: relative;
   color: #EDEDED;
   z-index: 5;
 }
-
-.home .container .space button::after {
-  content: '';
+.home .container-fluid .space button::after {
+  content: "";
   position: absolute;
   width: 0;
   height: 100%;
   background-color: transparent;
   left: 0;
   bottom: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: -1;
 }
-
-.home .container .space button:hover::after {
+.home .container-fluid .space button:hover::after {
   width: 100%;
   height: 100%;
   background-color: #EDEDED;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: -1;
 }
-
-.home .container .space button:hover {
+.home .container-fluid .space button:hover {
   color: #D70000;
 }
-
-.home .container img {
+.home .container-fluid img {
   max-width: 100%;
   max-height: 100%;
 }
-/*# sourceMappingURL=styleweb.css.map */

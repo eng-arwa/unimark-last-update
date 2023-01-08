@@ -1,19 +1,30 @@
+.parentcarsoul{
+    background-color: black;
+    padding-bottom: 180px;
+}
+
 .home{
-    background: url(../images/alizee-baudez-srUzc3I_h8Q-unsplash.png);
+    // background: url(../images/alizee-baudez-srUzc3I_h8Q-unsplash.png);
+    background-color: black;
+    color: white;
     background-size: cover ;
    
     background-repeat: no-repeat;
     .service{
         margin-top: 100px !important;
-     background-color: rgba(238, 238, 238, 0.6);
-     color: black !important;
+        padding-bottom: 120px !important;
+     background-color: black;
+     color: white !important;
      p,h1,small{
+      
         margin-bottom: 0;
+    
        
      }
    
+    
      h1{
-        color: #323543;
+        color: white;
         font-weight: bolder;
         font-size: 5em;
         margin-top: 0;

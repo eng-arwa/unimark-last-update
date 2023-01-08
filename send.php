@@ -6,7 +6,7 @@ require "autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 $mail = new PHPMailer(true);
-$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+                   //Enable verbose debug output
 $mail->isSMTP();                                            //Send using SMTP
 $mail->Host       = 'smtp.gmail.com';                                 //Set the SMTP server to send through
 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication

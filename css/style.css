@@ -10,11 +10,8 @@ body {
 }
 
 nav {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fffbfb), to(#a7a7a7)) !important;
-  background: linear-gradient(#fffbfb, #a7a7a7) !important;
-  border-bottom-left-radius: 25px;
+  background-color: white;
   max-width: 100%;
-  border-bottom-right-radius: 25px;
   width: 100%;
 }
 nav .container .menu-mobile {
@@ -182,15 +179,20 @@ nav .container .menu-list .parent:hover .logo-1 {
 
 .about-us {
   background: url("../image/Layer 6.png");
-  background-color: #E8E8E8;
+  background-color: black;
   background-position: bottom;
   background-size: contain;
+  color: white;
   background-repeat: no-repeat;
   position: relative;
 }
 .about-us .box {
   position: relative;
   overflow: hidden;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .about-us .box::before {
   content: "";
@@ -206,13 +208,11 @@ nav .container .menu-list .parent:hover .logo-1 {
   height: 10px;
   opacity: 1;
 }
-.about-us .box:hover img {
-  -webkit-transform: rotate(15deg) scale(1);
-          transform: rotate(15deg) scale(1);
-}
-.about-us .box:hover::before {
-  -webkit-animation: flashing 0.7s;
-          animation: flashing 0.7s;
+.about-us .box .arrow-cover {
+  position: absolute;
+  left: 15%;
+  top: 16%;
+  width: 75%;
 }
 
 .overlay {
@@ -225,14 +225,12 @@ nav .container .menu-list .parent:hover .logo-1 {
 
 .right img {
   max-width: 100%;
-  border-radius: 50%;
-  border: 7px solid #EEEEEE;
 }
 
 .left h5 {
   text-align: right;
   letter-spacing: 2px;
-  color: #D70000;
+  color: white;
   font-size: 3rem;
   font-weight: normal;
   margin-right: 30px;
@@ -242,11 +240,11 @@ nav .container .menu-list .parent:hover .logo-1 {
   max-height: 80%;
 }
 .left .container .row h3 {
-  color: black;
+  color: white;
   font-weight: 600;
 }
 .left .container .row p {
-  color: black;
+  color: white;
   font-size: 1rem;
 }
 .left .container .row button {
@@ -289,8 +287,48 @@ nav .container .menu-list .parent:hover .logo-1 {
   color: white;
 }
 
+.services-arrow {
+  background-color: #5E5E5E;
+}
+.services-arrow .shape {
+  position: relative;
+  background: url(../imageslidshow/background\ video.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+.services-arrow img {
+  width: 10%;
+}
+.services-arrow h4 {
+  font-size: 1.2rem;
+  color: white;
+}
+.services-arrow p {
+  font-size: 0.7rem;
+  color: white;
+}
+.services-arrow .arrow-cover {
+  position: absolute;
+  left: 31%;
+  width: 40%;
+}
+
+.headtitle {
+  font-weight: normal;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+
+.parent-carsoul {
+  padding-top: 100px;
+  padding-bottom: 130px;
+  background: black;
+}
+
 .carsoul {
-  background-color: #800000;
+  background-color: black;
   z-index: 3;
 }
 .carsoul .left-1 {
@@ -341,10 +379,10 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 .our-patners h5 {
   padding: 10px 0;
-  background-color: #F3F3F3;
   text-align: center;
-  font-weight: 100;
-  color: #333;
+  font-weight: normal;
+  font-size: 3rem;
+  color: rgb(105, 104, 104);
   margin: 0;
 }
 .our-patners img {
@@ -461,10 +499,14 @@ nav .container .menu-list .parent:hover .logo-1 {
   padding: 5px;
 }
 
+.branches {
+  padding-top: 20px;
+}
 .branches h3 {
-  background: -webkit-gradient(linear, right top, left top, from(#eee), to(#707070));
-  background: linear-gradient(to left, #eee, #707070);
-  color: white;
+  padding-top: 20px;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #787474;
   width: 100%;
   margin-bottom: 0;
 }
@@ -487,8 +529,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#9C9C9C));
-  background: linear-gradient(to bottom, #999999, #9C9C9C);
+  background-color: black;
   color: white;
 }
 .contact .container input[type=submit] {
@@ -545,6 +586,8 @@ nav .container .menu-list .parent:hover .logo-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 144px;
+  max-height: 144px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -556,8 +599,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 .contact .container .contact-info .text-contact p {
   width: 100%;
   text-align: justify;
-  min-height: 550px;
-  max-height: 550px;
+  max-height: 144px;
   overflow: scroll;
   overflow: auto;
   scroll-behavior: smooth;
@@ -573,43 +615,47 @@ nav .container .menu-list .parent:hover .logo-1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.contact .container .form form {
-  background-color: #B7B7B7;
-  border-radius: 40px;
+.contact .container .form .forminput {
+  background-color: #2E2E2E;
+  border-radius: 23px;
   position: relative;
 }
-.contact .container .form form hr {
+.contact .container .form .forminput hr {
   margin: 0;
-  border-top: 3px solid #969C9F;
+  border-top: 3px solid black;
   opacity: 1;
 }
-.contact .container .form form .vl {
+.contact .container .form .forminput .vl {
   position: absolute;
-  border-left: 3px solid #969C9F;
+  border-left: 3px solid black;
   height: 100%;
   top: 0;
   left: 19%;
 }
-.contact .container .form form label {
+.contact .container .form .forminput label {
   text-align: center;
   padding: 3px 25px 3px 10px;
   text-transform: capitalize;
   width: 20%;
 }
-.contact .container .form form input {
-  border-radius: 10px;
+.contact .container .form .forminput input {
+  border-radius: 15px;
   border: none;
   width: 70%;
-  padding: 3px 0;
+  padding: 10px 0;
   margin-top: 11px;
   margin-bottom: 10px;
-  margin-right: 5px;
+  margin-left: 10px;
   padding-right: 5px;
+  height: 38px;
 }
-.contact .container .form form input:last-of-type {
+.contact .container .form .forminput input:last-of-type {
   padding: 5px 0;
 }
-.contact .container .form form textarea {
+.contact .container .form .forminput input:last-child {
+  height: 50px;
+}
+.contact .container .form .forminput textarea {
   border-radius: 20px;
 }
 .contact .container .form button {
@@ -789,4 +835,10 @@ footer ul li {
   content: "" !important;
   font-family: "FontAwesome" !important;
   font-size: 22px;
+}
+
+@media (max-width: 662px) {
+  html {
+    font-size: 13px;
+  }
 }

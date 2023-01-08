@@ -1,3 +1,9 @@
+.img-arrow {
+  max-width: 10% !important;
+  position: absolute;
+  right: 0;
+}
+
 .about-us {
   background-position: top;
 }
@@ -58,8 +64,7 @@
 
 .welcom {
   color: white;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #C91414), color-stop(80%, #640404));
-  background: linear-gradient(to top right, #C91414 10%, #640404 80%);
+  background-color: black;
 }
 .welcom .container .row {
   overflow: hidden;
@@ -99,8 +104,7 @@
 }
 
 .overview {
-  background-color: #CDCDCE;
-  color: white;
+  color: black;
 }
 .overview .container .row h1 {
   text-transform: uppercase;

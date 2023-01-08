@@ -1,8 +1,9 @@
 .home{
     position: relative;
     // background: url('../images/theme-photos-CGpifH3FjOA-unsplash.png');
-    background: url('../images/BANNER\ SERVICES.png');
-    background-size:100%;
+    background: white !important;
+    color: black !important;
+        background-size:100%;
    background-position: center;
     background-repeat: no-repeat;
    
@@ -15,13 +16,12 @@
     z-index: -1;
     // background-color: rgba(238, 238, 238, 0.407);
   }
-  .container{
+  .container-fluid{
     padding: 0;
     margin: 0;
     .row{
         .content{
             width: 100%;
-            background-color: rgba(238, 238, 238, 0.449);
             z-index: 4;
             h3{
                 color: #323543;

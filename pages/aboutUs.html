@@ -19,11 +19,12 @@
     <nav class="fixed-top">
         <div class="container">
          <ul class="menu-list">
+            <li><div class="logo"></div></li>
+
              <li ><a href="../index.html">home</a></li>
              <li ><a href="../pages/aboutUs.html">about us</a>
              </li>
              <li ><a href="../pages/services.html">services</a></li>
-             <li><div class="logo"></div></li>
             
              
              <li ><a href="../pages/contactUs.html">contact us</a></li>
@@ -127,7 +128,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-5 right d-none d-sm-block d-sm-none d-md-block">
                     <div class="box">
-                        <img src="../image/aboutUs.png" alt="">
+                        <img src="../image/Component 32 – 1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -210,7 +211,7 @@
             </div>
         </div>
     </div>
-    <div class="overview">
+    <div class="overview mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -227,14 +228,18 @@
 
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12 col-xs-12">
-                        <p class="">
-
-                            The Unimark Employee Culture Handbook has been created to provide general 
-                            guidelines about Unimark’s policies, benefits, and expectations. It is a guide to 
-                            assist you in becoming familiar with WHO we are and WHAT we do as well as 
-                            sharing some of the culture, privileges, and obligations of your employment 
-                            with Unimark.
-                                                    </p>
+                        <div class="d-flex">
+                            <img src="../image/Component -arow.png" class="img-arrow" alt="">
+    
+                            <p class="">
+    
+                                The Unimark Employee Culture Handbook has been created to provide general 
+                                guidelines about Unimark’s policies, benefits, and expectations. It is a guide to 
+                                assist you in becoming familiar with WHO we are and WHAT we do as well as 
+                                sharing some of the culture, privileges, and obligations of your employment 
+                                with Unimark.
+                                                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -334,8 +339,9 @@
                 
                </div>
                <div class="col-lg-5 col-md-5 col-xs-5 ms-lg-5">
-                <div class="form ">
-                    <form method="post" action="">
+                <div class="form " >
+                    <form method="post" action="../send.php">
+                      <div class="forminput">
                         <label for="name">name</label>
                         <div class="vl"></div>
                         <input type="text" name="name" id="name">
@@ -345,9 +351,10 @@
                         <hr>
                         <label for="msg">message</label>
                         <input name="msg" id="msg">
-                       
+                      </div>
+                        <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">Send</button>
+
                     </form>
-                    <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">Send</button>
                 </div>
                </div>
             </div>

@@ -20,12 +20,13 @@
     <nav class="fixed-top">
         <div class="container">
          <ul class="menu-list">
+            <li><div class="logo"></div></li>
+
              <li ><a href="../index-rtl.html">الصفحة الرئيسيه</a></li>
-             <li ><a href="./aboutUs-rtl.html"> من نحن
+             <li ><a href="../aboutUs-rtl.html"> من نحن
              </a>
              </li>
              <li ><a href="./services-rtl.html">خدماتنا</a></li>
-             <li><div class="logo"></div></li>
             
             
              <li ><a href="./contactUs-rtl.html">تواصل معنا </a></li>
@@ -41,7 +42,7 @@
              <li>
               <div class="search-wrapper">
                 <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <input type="text" onkeyup="search()" id="textsearch"  class="search-input" placeholder="Type to search" />
                     <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                 </div>
                 <span class="close" onclick="searchToggle(this, event);"></span>
@@ -61,7 +62,7 @@
                 <li>
                     <div class="search-wrapper">
                       <div class="input-holder">
-                          <input type="text" class="search-input" placeholder="Type to search" />
+                          <input type="text" id="textsearch" onkeyup="search()" class="search-input" placeholder="Type to search" />
                           <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                       </div>
                       <span class="close" onclick="searchToggle(this, event);"></span>
@@ -101,17 +102,21 @@
                   <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-xs-12 pt-4">
-                    <img src="../image/Path 17.png" alt=""></div>
-                        <div class="col-lg-12 col-md-12 col-xs-12 ms-lg-5 "> <h3 class="me-5">Who We Are</h3></div>
+                    <img src="../../image/Path 17.png" alt=""></div>
+                        <div class="col-lg-12 col-md-12 col-xs-12 ms-lg-5 "> <h3 class="me-5">من نحـن</h3></div>
                         <div class="col-lg-12 col-md-12 col-xs-12  ms-lg-5 "> 
                                             <div class="text-content">
                                                 
                                                 <p class="me-5 w-75">
-                                                    A company specialized in providing various marketing services, creating creative solutions, and creating unique and innovative marketing content.
-                                                We offer a complete marketing strategy based on plans, analyzes, study the competitive market, identify the target audience, and choose the appropriate platforme, to achieve your marketing goals with the highest outputs. A company specialized in providing various marketing services, creating creative solutions, and creating unique and innovative marketing content.
-                                                We offer a complete marketing strategy based on plans, analyzes, study the competitive market, identify the target audience, and choose the appropriate platforme, to achieve your marketing goals with the highest outputs. A company specialized in providing various marketing services, creating creative solutions, and creating unique and innovative marketing content.
-                                                We offer a complete marketing strategy based on plans, analyzes, study the competitive market, identify the target audience, and choose the appropriate platforme, to achieve your marketing goals with the highest outputs.
-
+                                                    يونيمارك شــركة ســعودية للخدمــات التســويقية ، تهــدف إلــى تقديــم أفضــل الخدمـات التسـويقية التـي تتناسـب مـع احتياجـات عملائنـا، على قـدر عـاٍل مـن التميـز والجـودة.
+                                                    يعمــل فريق يونيمارك بمهنيــة عاليــة لتصميــم خدماتنــا تناسـب الاحتيـاج الفعلـي المبنـي على تحليـل وتشـخيص الأداء لشـركائنا لتقديـم والحلـول المناسـبة لتسـهيل عمليـة تحسين الأداء العـام.
+                                                    نقـدم خدمـات تسـويقية  متكاملـة للشـركات العاملـة في كل القطاعـات بشـكل يجعـلنا  دائمـا على مواكبـين المتغيـرات و التوجهـات الحديثـة في الأسـواق المحليـة والعالميـة بالأخـذ بأحـدث الأسـاليب ونمـاذج الأعمـال لتطويـر و تنفيـذ أفضـل الحلـول التسـويقية لشركائنا لنجعل أداءهـا متناغمـا مـع المتغيـرات المسـتمرة في بيئـة الأعمـال السـعودية والخليجيـة.
+                                                   <br> رؤيتنا   <br>
+                                                    أن تكون خدماتنا وحلولنا الخيار الأول للمنظمات في كل القطاعات لتفردنا وتميزنا في قطاع التسويق.
+                                                    
+                                                    <br>  رسالتنا  <br>
+                                                    نسعى دائما لتقديم الخدمات والحلول التسويقية المتفردة لتمكين شركاءنا من تنمية وتطوير أعمالهم.
+                                                                                                        
 
 
 
@@ -131,8 +136,8 @@
     
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-5 right d-none d-sm-block d-sm-none d-md-block">
-                    <div class="box">
-                        <img src="../image/aboutUs.png" alt="">
+                    <div class="box d-flex align-items-center mt-4">
+                        <img src="../../image/Component.png" alt="">
                     </div>
                 </div>
             </div>
@@ -143,7 +148,7 @@
         <div class="container">
             <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <img src="./images/side/Group 29.png" alt="">
+                <img src="../../pages/images/side/Group 29.png" alt="">
                
             </div>
             </div>
@@ -215,11 +220,10 @@
             </div>
         </div>
     </div>
-    <div class="overview">
+    <div class="overview mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-
                 </div>
                 <div class="col-lg-9 col-md-9 colsm-9 col-xs-9">
                     <div class="row">
@@ -228,10 +232,14 @@
                             <div class="col-lg-3 pe-5 me-lg-5 pt-3 ms-lg-5 ps-md-3 ms-md-5 col-md-3 col-sm-3 col-xs-3  d-none d-sm-block d-sm-none d-md-block">
                             <img src="./images/Path 19.png " class="Polygon" alt="">   
                             </div>
+
                        
 
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12 col-xs-12">
+                    <div class="d-flex">
+                        <img src="../../image/Component -arow.png" class="img-arrow" alt="">
+
                         <p class="">
 
                             The Unimark Employee Culture Handbook has been created to provide general 
@@ -241,31 +249,30 @@
                             with Unimark.
                                                     </p>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
   </div>
-    <div class="whous">
-        <div class="container">
-            <div class="row parent-web">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./images/john-schnobrich-FlPc9_VocJ4-unsplash.png" alt="">
+  <div class="whous">
+        
+    <div class="">
+        <!-- <img src="./images/john-schnobrich-FlPc9_VocJ4-unsplash.png" alt=""> -->
 
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <p class="pt-5 pe-5">
-                        We are a diverse group of passionate visionaries, techies, nerds, and 
-                        forward thinkers who love what we do. We are highly motivated, 
-                        friendly and we love Marketing.
-                        we love a lot of things including working with other hard-working, 
-                        talented people
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
     </div>
+    <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <p class="pt-5 ps-5">
+            We are a diverse group of passionate visionaries, techies, nerds, and 
+            forward thinkers who love what we do. We are highly motivated, 
+            friendly and we love Marketing.
+            we love a lot of things including working with other hard-working, 
+            talented people
+        </p>
+        
+    </div> -->
+
+</div>
     <!-- <div class="employ pb-2">
         <div class="container">
             <h3 class="m-auto text-center pt-5">They Made Us Successful</h3>
@@ -325,16 +332,17 @@
         <div class="container pt-5 ">
             <h2 class="text-center">اتصل بنا</h2>
             <div class="row pt-5">
-               <div class="col-lg-6 col-md-6 col-xs-6">
-                <div class="contact-info pt-2">
-                    <div >
-                        <img src="./image/UNIMARK LOGO_icon grey.png" alt="" >
+               <div class="col-lg-6 col-md-6 col-xs-6 d-flex align-items-center">
+                <div class="contact-info pt-2 mb-5">
+                    <div style="flex: 1;" class="align-items-center ">
+                        <img src="../../image/UNIMARK LOGO_icon grey.png" alt="" >
                     </div>
-                    <div class="text-contact">
+                    <div class="text-contact" style="flex: 3;">
                         <p >
-                            وكالة يونيمارك للتسويق - تسليط الضوء على مشروعك شركة متخصصة في تقديم خدمات تسويقية متنوعة ، وإنشاء حلول إبداعية ، وإنشاء محتوى تسويقي فريد ومبتكر. نقدم إستراتيجية تسويق كاملة مبنية على الخطط والتحليل
+                            	نحـــن نمتـــاز عـــن الشـــركات الأخـــرى العاملـــة في قطـــاع التسويق مـــن خـــلال خدماتنـــا المصممـة لخدمـة كل عميـل طبقـا لاحتياجاتهـم المبنيـة على تحليلنـــا الأولـــي للوضـــع القائـــم
+                            	فريـق عمـل يونيمارك يحمـل أعلى الشـهادات الأكاديميـة والمهنيــة في تخصصــات التســويق والإدارة مــع الخبــرة الطويلـة في قطـاع الأعمـال ممـا يعـزز مـن قدرتهـم على تقديــم أفضــل الحلــول المناسبة والضامنه لنمو أعمال شركاءنا.
+            	           خدماتنـا المقدمـة تتميـز بأنها تطور و تبنى بناءً على تحليل دقيق لواقـع عملائنـا الحالي، والتوصيـات والحلول والتســويقية مبنيــة على هــذا التحليــل الواقعــي الـذي على ضوئه يقـدم مشـروع عمـل مميـز ومتكامـل مســتخدمين أفضــل الأساليب  والممارســات المهنية في قطـاع الأعمـال.
 
-                            وكالة يونيمارك للتسويق - تسليط الضوء على مشروعك شركة متخصصة في تقديم خدمات تسويقية متنوعة ، وإنشاء حلول إبداعية ، وإنشاء محتوى تسويقي فريد ومبتكر. نقدم إستراتيجية تسويق كاملة مبنية على الخطط والتحليل
                         </p>
                     </div>
                 </div>
@@ -342,7 +350,8 @@
                </div>
                <div class="col-lg-5 col-md-5 col-xs-5 ms-lg-5">
                 <div class="form ">
-                    <form method="post" action="">
+                    <form method="post" action="../../send.php">
+                       <div class="forminput pt-3 pb-3" >
                         <label for="name">الاسم</label>
                         <div class="vl"></div>
                         <input type="text" name="name" id="name">
@@ -352,16 +361,17 @@
                         <hr>
                         <label for="meg">الرساله</label>
                         <input name="meg" id="meg">
-                       
+                       </div>
+                        <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">ارسال</button>
+
                     </form>
-                      <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">ارسال</button>
                 </div>
                </div>
             </div>
         </div>
         </div>
         <footer>
-            <div class="container pt-4 pb-4">
+            <div class="container-fluid pt-4 pb-4">
              <div class="row text-center">
                 <div class="col-lg-4 col-md-4 col-xs-4 me-lg-2">
                     <i class="fa-brands fa-instagram me-2"></i>

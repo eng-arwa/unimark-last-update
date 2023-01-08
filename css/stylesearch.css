@@ -1,6 +1,7 @@
 
-
-
+.search-wrapper.active .input-holder{
+  transform: translateY(10px) !important;
+}
 .search-wrapper {
 
   transform: translate(-6%, -9%);
@@ -66,6 +67,7 @@ transition: all 0.3s ease-in-out;
 .search-wrapper.active .input-holder .search-icon {
 width: 50px;
 height:50px;
+transform: translateY(-8px);
 margin: 10px;
 border-radius: 30px;
 }
@@ -110,13 +112,13 @@ right:20px;
 width:25px;
 height:25px;
 cursor: pointer;
-transform: rotate(-180deg);
+transform: rotate(-180deg) ;
 transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
 transition-delay: 0.2s;
 }
-.search-wrapper.active .close {
+.search-wrapper.active .close  {
 right:-27px;
-transform: rotate(45deg);
+transform: rotate(45deg) translate(5px,1px);
 transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
 transition-delay: 0.5s;
 }

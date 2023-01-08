@@ -158,21 +158,21 @@
         </div>
     </nav>
   <div></div>
-    <div class="home pt-5">
+    <div class="home pt-5 pb-5">
         <div class="service mt-5 pt-5 pb-5">
 
-            <div class="container pb-5">
+            <div class="container-fluid pb-5">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="flex-column">
                             <h1 class="">Services</h1>
-                            <p class="">WE WORK FOR YOUR </p>
-                            <p class="">PROFIT</p>
+                            <p class="" style="color: #d70000;">WE WORK FOR YOUR </p>
+                            <p class="" style="color: #d70000;">PROFIT</p>
                         </div>
                     
                     </div>
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                      <div class="parograph">
                         <p>
                             A company specialized in providing various marketing services, creating creative solutions, and creating unique and innovative marketing content.
@@ -187,7 +187,8 @@
             </div>
         </div>
     </div>
-    <div class="carsoul pb-5">
+   <div class="parentcarsoul">
+    <div class="carsoul pt-5 pb-5">
         <div class="shape">
             <div class="one">
                
@@ -248,9 +249,10 @@
         </div>
         
        </div>
+   </div>
        <div class="services-type pb-5 pt-5">
         <div class="image-side W-50">
-            <img src="./images/aleks-dorohovich-nJdwUHmaY8A-unsplash.png" alt="">
+            <img src="../pages/./images/aleks-dorohovich-nJdwUHmaY8A-unsplash.png" alt="">
         </div>
 
         <div class="container  pt-5 pb-5">
@@ -396,6 +398,7 @@
                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12  ms-lg-5">
                 <div class="form ">
                     <form method="post" action="">
+                      <div class="forminput">
                         <label for="name">الاسم</label>
                         <div class="vl"></div>
                         <input type="text" name="name" id="name">
@@ -405,9 +408,11 @@
                         <hr>
                         <label for="meg">الرساله</label>
                         <input name="meg" id="meg">
+                      </div>
+                        <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">ارسال</button>
+
                        
                     </form>
-                      <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">ارسال</button>
                 </div>
                </div>
             </div>
@@ -458,7 +463,7 @@
         rtl:true,
         cancelable:true,
         lazyLoad: 'progressive',
-        prevArrow:"<button type='button' class=''><i  class='fa-solid fa-play' aria-hidden='true'></i></button>",
+        prevArrow:"<button type='button' class=''><i class='fa-solid fa-play' aria-hidden='true'></i></button>",
             nextArrow:"<button type='button' class=''><i  class='fa-solid fa-play' aria-hidden='true'></i></button>",
         onAfterChange: function(slide, index){
   console.log( $(this).attr('id') ); 

@@ -53,7 +53,7 @@
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background: linear-gradient(#fffbfba8,#a7a7a7f5);;
+  background: white;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
 }
@@ -99,8 +99,8 @@
   top: 40px;
   left: 0;
   padding: 20px;
- 
-  background-color: rgb(210, 209, 209);
+ background-color: white;
+ box-shadow: 5px 5px 2px #eee;
 }
 
 .langselect ul li {

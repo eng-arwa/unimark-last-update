@@ -27,6 +27,13 @@
 /* medua */
 
 @media (min-width:320px)  { 
+ 
+    .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+       
+        font-size: 14px !important;}
+        .button .all .top svg{
+            font-size: 14px !important;
+        }
     .carsoul{
         max-height: 120px;
     } 
@@ -42,16 +49,18 @@
     .carsoul .content{
         transform: translateY(-42%);
     }
-    .arrow {
-        transform: translate(-64%,-44%) !important;
-    }
     .arrow img{
-        width: 100% !important;
+        width: 80% !important;
     }
     .cover img {
         transform: translate(94%,-15%) !important;
         max-width: 35% !important;
     }
+    .arrow {
+        transform: translate(-74%,-44%) !important;
+    }
+   
+  
 
     .button .all .top {
         
@@ -65,10 +74,23 @@
 
 
 }
-
+@media (min-width:441px) {
+    .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+       
+        font-size: 20px !important;}
+        .button .all .top svg{
+            font-size: 20px !important;
+        }
+}
 @media (min-width:481px)  {
      /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px)  {
+    .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+       
+        font-size: 29px !important;}
+        .button .all .top svg{
+            font-size: 29px !important;
+        }
     .cover img {
         transform: translate(-93%,-29%) !important;}
         .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
@@ -112,9 +134,55 @@
     /* smartphones, iPhone, 
 
     /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  
 @media (min-width:1025px) { 
     /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px){
 
+
+}
+
+@media (max-width:1412px){
+  
+    .traingale img:first-child {
+       
+        left: -11%;} 
+        .traingale img:nth-child(3) {
+          
+            right: -11%;}
+
+}
+@media (max-width:1318px){
+  
+    .traingale img:first-child {
+       
+        left: -13%;} 
+        .traingale img:nth-child(3) {
+          
+            right: -13%;}
+
+}
+@media (max-width:1112px){
+   
+  
+    .traingale img:first-child {
+       
+        left: -14%;}
+        .traingale img:nth-child(3) {
+          
+            right: -14%;} 
+        
+
+}
+@media (max-width:1087px){
+   
+  
+    .traingale img:first-child {
+       
+        left: -16%;}
+        .traingale img:nth-child(3) {
+          
+            right: -16%;} 
+        
 
 }

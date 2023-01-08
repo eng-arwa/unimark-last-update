@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="./css/slickcaesoule.css">
 <link rel="stylesheet" href="../css/style-rtl.css">
+<link rel="stylesheet" href="./css/services.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/sliderlogo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/slickcaesoule.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 </head>
 <body>
@@ -44,7 +54,7 @@
              <li>
               <div class="search-wrapper">
                 <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <input type="text" onkeyup="search()" id="textsearch" class="search-input" placeholder="Type to search" />
                     <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                 </div>
                 <span class="close" onclick="searchToggle(this, event);"></span>
@@ -93,65 +103,71 @@
           </div>
         </div>
     </nav>
- <div class="home">
-    <div class="overlay"></div>
-    <div class="container pt-5">
-       <div class="row pb-5 parent-web">
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 pb-5">
-
-            <div class="flex-column pb-5">
-                <div class="content pt-5 pe-5 pb-5">
-                    <h3>WEB  
-                    </h3>
-                    <span>DEVELOPMENT</span>
-                  <div>
-                    <p>
-
-                        * Creating and developing websites.
-                        * Designing social media posts.
-                        * Design profiles and brand brochures.
-                        * Creation and design of billboards.
-                        * Designing promotional gifts.
-                        * Designing websites and applications interfaces.
-                        * Designing magazines and books.
-                   </p>
-                  </div>
-                </div>
-                <div class="space d-flex pb-5 justify-content-end align-items-center">
-                    <button class="mt-0 ">Scroll up for More</button>
-
+    <div class="home pb-5">
+        <div class="overlay"></div>
+        <div class="container-fluid mt-5  pt-5">
+           <div class="row pb-5 parent-mobile align-items-center">
+            <div class="col-3">
+                <h2 class="pe-5 " style="color: #323543;">Web services</h2>
+            </div>
+            <div class="col-5 mt-5">
+    
+                <div class="flex-column">
+                    <div class="content pt-5 pe-5 pb-5">
+                    
+                      <div>
+                       <p>
+                        * Managing promotional campaigns and providing statistics on them.
+                        * Support and improve performance in the digital space.
+                        * Preparing mental image reports for partners and their competitors.
+                        * Develop and implement marketing plans and strategies.
+                        * Preparing performance reports for social media platforms and restructuring them.
+                        * Optimization of search engines (SEO)
+                        * Managing social media platforms according to well-    thought-out plans.
+                       </p>
+                      </div>
+                    </div>
+                    <div class="space d-flex pb-5 justify-content-end align-iteme-center">
+                        <button class="mt-0 ">Scroll up for More</button>
+    
+                    </div>
                 </div>
             </div>
+            <div class="col-4">
+              <img src="../../image/Component.png" alt="">
+            </div>
+           </div>
+           
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          
+     </div>
+ <div class="sliderclient ">
+    <div class="slider-area">
+        <div class="wrapper">
+          <div class="item"><img alt="" src="./images/1 (2).png"></div>
+          <div class="item"><img alt="" src="./images/baby home logo-11.png"></div>
+          <div class="item"><img alt="" src="./images/91-2.png"></div>
+          <div class="item"><img alt="" src="./images/logo new-1.png"></div>
+          <div class="item"><img alt="" src="./images/قناطير.png"></div>
+          <div class="item"><img alt="" src="./images/rawad new.png"></div>
+          <div class="item"><img alt="" src="./images/meat shop-1.png"></div>
+          <div class="item"><img alt="" src="./images/logo new-1.png"></div>
+          <div class="item"><img alt="" src="./images/2.png"></div>
+          <div class="item"><img alt="" src="./images/saboba.png"></div>
+          <div class="item"><img alt="" src="./images/united digital-logo-2.png"></div>
+          <div class="item"><img alt="" src="./images/crs11.png"></div>
         </div>
-       </div>
-       
-    </div>
+      </div>
  </div>
-<div class="carsoul-project">
-    <div class="wrapper" dir="rtl">
-        <div class="carousel" dir="rtl">
-          <div><img src="./images/Rectangle 54.png"></div>
-          <div><img src="./images/Rectangle 55.png"></div>
-          <div><img src="./images/Rectangle 56.png"></div>
-          <div><img src="./images/Rectangle 57.png"></div>
-          <div><img src="./images/Rectangle 58.png"></div>
-          
-        </div>
-  </div>
-</div>
 <div class="contact pb-5" id="contact">
     <div class="container pt-5 ">
         <h2 class="text-center">اتصل بنا</h2>
         <div class="row pt-5">
-           <div class="col-lg-6 col-md-6 col-xs-6">
+           <div class="col-lg-6 col-md-6 col-xs-6 d-flex align-items-center">
             <div class="contact-info pt-2">
-                <div >
-                    <img src="./image/UNIMARK LOGO_icon grey.png" alt="" >
+                <div style="flex: 1;">
+                    <img src="../../image/UNIMARK LOGO_icon grey.png" alt="" >
                 </div>
-                <div class="text-contact">
+                <div class="text-contact" style="flex: 3;">
                     <p >
                         وكالة يونيمارك للتسويق - تسليط الضوء على مشروعك شركة متخصصة في تقديم خدمات تسويقية متنوعة ، وإنشاء حلول إبداعية ، وإنشاء محتوى تسويقي فريد ومبتكر. نقدم إستراتيجية تسويق كاملة مبنية على الخطط والتحليل
 
@@ -162,8 +178,9 @@
             
            </div>
            <div class="col-lg-5 col-md-5 col-xs-5 me-lg-5">
-            <div class="form ">
-                <form method="post" action="">
+            <div class="form pt-3 pb-3">
+                <form method="post" action="../../send.php">
+                 <div class="forminput">
                     <label for="name">الاسم</label>
                     <div class="vl"></div>
                     <input type="text" name="name" id="name">
@@ -173,16 +190,17 @@
                     <hr>
                     <label for="msg">الرساله</label>
                     <input name="msg" id="msg">
-                   
+                 </div>
+                    <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">ارسال</button>
+
                 </form>
-                  <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">ارسال</button>
             </div>
            </div>
         </div>
     </div>
     </div>
     <footer>
-        <div class="container pt-4 pb-4">
+        <div class="container-fluid pt-4 pb-4">
          <div class="row text-center">
             <div class="col-lg-4 col-md-4 col-xs-4 me-lg-2">
                 <i class="fa-brands fa-instagram me-2"></i>
@@ -213,7 +231,7 @@
     <script src="../../js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+    <script src="./flickity.pkgd.min.js"></script>
   
     <script>
         $(document).ready(function(){

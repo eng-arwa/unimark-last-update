@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/slickcaesoule.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../map-style.css">
     <style>
  .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
 
@@ -86,12 +87,13 @@
     <nav class="fixed-top">
         <div class="container">
          <ul class="menu-list">
+            <li><div class="logo"></div></li>
              <li ><a href="./index-rtl.html">الصفحة الرئيسيه</a></li>
              <li ><a href="./pages/aboutUs-rtl.html"> من نحن
              </a>
              </li>
              <li ><a href="././pages/services-rtl.html">خدماتنا</a></li>
-             <li><div class="logo"></div></li>
+             
             
             
              <li >
@@ -109,7 +111,7 @@
              <li>
               <div class="search-wrapper">
                 <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <input type="text" id="textsearch" onkeyup="search()" class="search-input" placeholder="Type to search" />
                     <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                 </div>
                 <span class="close" onclick="searchToggle(this, event);"></span>
@@ -128,12 +130,13 @@
             <ul class="menu__box pt-5">
                 <li class="pt-5">
                     <div class="search-wrapper">
-                      <div class="input-holder">
-                          <input type="text" class="search-input" placeholder="Type to search" />
-                          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-                      </div>
-                      <span class="close" onclick="searchToggle(this, event);"></span>
-                  </div>
+                        <div class="search-wrapper">
+                            <div class="input-holder">
+                                <input type="text" id="textsearch" onkeyup="search()" class="search-input" placeholder="Type to search" />
+                                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                            </div>
+                            <span class="close" onclick="searchToggle(this, event);"></span>
+                        </div>
                    </li>
                 <li class="pt-5  pe-5"><a href="./index-rtl.html">home</a></li>
                 <li class=" pe-5"><a href="./pages/aboutUs-rtl.html">about us</a>
@@ -164,7 +167,7 @@
         
          <div class="show-vid" id="home">
             <div class="">
-                <video src="../video/Platform Vt1.mp4" controls autoplay></video>
+                <video src="../video/Platform Vt1.mp4" controls ></video>
             
             </div>
         </div>
@@ -187,9 +190,11 @@
                     <div class="col-lg-12 col-md-12 col-xs-12 ms-lg-5 "> <h3 class="ms-5">من نحن</h3></div>
                     <div class="col-lg-12 col-md-12 col-xs-12  ms-lg-5 "> 
                         <p class="ms-5 w-75">
-                            شركة متخصصة في تقديم خدمات تسويقية متنوعة وخلق حلول إبداعية وخلق محتوى تسويقي فريد ومبتكر.
-                            نقدم استراتيجية تسويقية كاملة تعتمد على الخطط والتحليلات ودراسة السوق التنافسي وتحديد الجمهور المستهدف واختيار المنصات المناسبة لتحقيق أهدافك التسويقية بأعلى المخرجات.
+                            يونيمارك شــركة ســعودية للخدمــات التســويقية ، تهــدف إلــى تقديــم أفضــل الخدمـات التسـويقية التـي تتناسـب مـع احتياجـات عملائنـا، على قـدر عـاٍل مـن التميـز والجـودة.
+                            يعمــل فريق يونيمارك بمهنيــة عاليــة لتصميــم خدماتنــا تناسـب الاحتيـاج الفعلـي المبنـي على تحليـل وتشـخيص الأداء لشـركائنا لتقديـم والحلـول المناسـبة لتسـهيل عمليـة تحسين الأداء العـام.
+                            نقـدم خدمـات تسـويقية  متكاملـة للشـركات العاملـة في كل القطاعـات بشـكل يجعـلنا  دائمـا على مواكبـين المتغيـرات و التوجهـات الحديثـة في الأسـواق المحليـة والعالميـة بالأخـذ بأحـدث الأسـاليب ونمـاذج الأعمـال لتطويـر و تنفيـذ أفضـل الحلـول التسـويقية لشركائنا لنجعل أداءهـا متناغمـا مـع المتغيـرات المسـتمرة في بيئـة الأعمـال السـعودية والخليجيـة.
                             
+
                             </p>
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12 ms-lg-5"> 
@@ -201,8 +206,8 @@
 
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-5 right d-none d-sm-block d-sm-none d-md-block">
-               <div class="box ">
-                <img src="../image/aboutUs.png" alt="">
+               <div class="box d-flex align-items-center mt-4" >
+                <img src="../image/Component.png" alt="">
                </div>
             </div>
         </div>
@@ -210,67 +215,69 @@
 </div>
 <!-- end about -->
 <!-- start carsoul -->
-
-<div class="carsoul pb-5">
-    <div class="shape">
-        <div class="one">
-           
-         </div>
-         <div class="arrow">
-            <img src="../imageslidshow/background video.png" alt="">
-            
-         </div>
-         <div class="cover">
-            <img src="../imageslidshow/Polygon 8.png" alt="">
-         </div>
-         <div class="traingale">
-            <div class="parent">
+<h2 class="text-white text-center bg-black mb-0 pb-5 headtitle">خدماتنا</h2>
+<div class="parent-carsoul">
+    <div class="carsoul pb-5">
+        <div class="shape">
+            <div class="one">
+               
+             </div>
+             <div class="arrow">
+                <img src="../image/Component.png" alt="">
+                
+             </div>
+             <div class="cover">
+                <!-- <img src="../imageslidshow/Polygon 8.png" alt=""> -->
+             </div>
+             <div class="traingale">
+                <div class="parent">
+                    <img src="../imageslidshow/Polygon 4.png" alt="">
+                <img src="../image/Polygon 4.png" alt="">
                 <img src="../imageslidshow/Polygon 4.png" alt="">
-            <img src="../image/Polygon 4.png" alt="">
-            <img src="../imageslidshow/Polygon 4.png" alt="">
-            <img src="" alt="">
-            <img src="../imageslidshow/Polygon 4.png" alt="">
+                <img src="" alt="">
+                <img src="../imageslidshow/Polygon 4.png" alt="">
+                </div>
+             </div>
+    
+        </div>
+        <div class="content mt-2">
+            <div  class=" text carsoul-project" dir="rtl">
+            
+                 <div class="wrapper" dir="rtl">
+                     <div class="carousel" dir="rtl">
+                         <div data-name="code">
+                             <img src="../image/coding.png" alt="" >
+                             <h4>Website Development</h4>
+                             <p>Start Your Campaigns Now</p></div>
+                         <div><img src="../image/promotion.png" alt="">
+                             <h4>Digital Marketing</h4>
+                         <p>Start Your Campaigns Now</p></div>
+                         <div>
+                             <h1>Services</h1>
+                             </div>
+                             <div><img src="../image/curve.png" alt="">
+                                 <h4>Design & Creativity</h4>
+                                 <p>We Make Your DesignLife</p></div>
+                                 <div><img src="../image/app-development.png" alt="">
+                                     <h4>Mobile Development</h4>
+                                     <p>We Make Your DesignLife</p></div>
+                       
+                     
+               </div>
+             </div>
+                         
             </div>
          </div>
-
-    </div>
-    <div class="content mt-2">
-        <div  class=" text carsoul-project" dir="rtl">
-        
-             <div class="wrapper" dir="rtl">
-                 <div class="carousel" dir="rtl">
-                     <div data-name="code">
-                         <img src="../image/coding.png" alt="" >
-                         <h4>Website Development</h4>
-                         <p>Start Your Campaigns Now</p></div>
-                     <div><img src="../image/promotion.png" alt="">
-                         <h4>Digital Marketing</h4>
-                     <p>Start Your Campaigns Now</p></div>
-                     <div>
-                         <h1>Services</h1>
-                         </div>
-                         <div><img src="../image/curve.png" alt="">
-                             <h4>Design & Creativity</h4>
-                             <p>We Make Your DesignLife</p></div>
-                             <div><img src="../image/app-development.png" alt="">
-                                 <h4>Mobile Development</h4>
-                                 <p>We Make Your DesignLife</p></div>
-                   
-                 
-           </div>
-         </div>
-                     
-        </div>
-     </div>
-
-    <div class="button">
-        <div class="all">
-          
-            <span class="top" onclick="servicesindexEer()"><i class="fa-solid fa-play"></i></span>
-        </div>
-    </div>
     
-   </div>
+        <div class="button">
+            <div class="all">
+              
+                <span class="top" onclick="servicesindexEer()"><i class="fa-solid fa-play"></i></span>
+            </div>
+        </div>
+        
+       </div>
+</div>
 
 <!-- end  carsoul -->
 <!-- <div class="services pt-5 pb-5" id="services">
@@ -398,40 +405,40 @@
         <h5> Success partners  </h5>
         <div class="container">
             <div class="row p-5">
-                <div class="col-lg-3 col-sm-3 pb-3  pt-3 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 col-sm-3 pb-3  col-3  pt-3 d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/91-2.png" alt="">
                 </div>
-                <div class="col-lg-3 col-sm-3 pb-3  pt-3  d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 col-sm-3 pb-3  pt-3  col-3  d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/logo new-1.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3  pt-5 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3  col-3  pt-5 d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/قناطير.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3 pt-3  d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3 pt-3  col-3  d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/rawad new.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3 pt-3 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3 pt-3  col-3 d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/برجر ستيشن.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3 pt-3 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3 pt-3  col-3 d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/baby home logo-11.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3 pt-3 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3 pt-3 col-3  d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/crs11.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3 pt-3 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3 pt-3 col-3  d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/1 (2).png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3 pt-3 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3 pt-3 col-3  d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/united digital-logo-2.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3 pt-3 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3 pt-3  col-3 d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/WhatsApp Image 2022-12-14 at 2.12.01 PM.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 col-sm-3 pt-3  d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 col-sm-3 pt-3  col-3  d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/2.png" alt="">
                 </div>
-                <div class="col-lg-3 pb-3 pt-3 col-sm-3 d-flex align-items-center justify-content-center border-img">
+                <div class="col-lg-3 pb-3 pt-3 col-sm-3  col-3 d-flex align-items-center justify-content-center border-img">
                     <img src="../pages/images/meat shop-1.png" alt="">
                 </div>
             </div>
@@ -440,58 +447,52 @@
         </div>
     </div>
 
-<div class="branches" id="">
+    <div class="branches" id="">
     
-        <h3 class="text-center pt-2 pb-2">فروعنا</h3>
+        <h3 class="text-center pt-2 pb-2">فروعنا </h3>
         
-        <div class="map">
-            <div class="container-fluid">
-                <div class="row">
-                    
-                    <div class="col-lg-4 col-md-4 col-xs-4 ms-0 pe-0 ms-0 pe-0">
-                        <div class="gray col-lg-12 col-md-12 col-xs-12"></div>
-                        <div class="map_inner">
-                           
-                            <div class="map_bind">
-                                <iframe src="httpe://www.google.com/mape/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-xs-4 ms-0 pe-0  pe-0 ms-0">
-                        <div class="gray col-lg-12 col-md-12 col-xs-12"></div>
-                        <div class="map_inner">
-                            
-                            <div class="map_bind">
-                                <iframe src="httpe://www.google.com/mape/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-xs-4 pe-0 ms-0  pe-0 ms-0">
-                        <div class="gray col-lg-12 col-md-12 col-xs-12"></div>
-                        
-                            <div class="map_bind">
-                                <iframe src="httpe://www.google.com/mape/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
+                
+        <section id="places-map">
+            <div class="map animate-fade-in">
+                <img src="https://unimarkme.com/wp-content/uploads/2021/12/Asset-3.svg" alt="Map of Western Union Locations" width="903" height="452" />
+                <div class="map-pins">
+                   
+                    <a class="map-location-marker marker-costa-rica tooltipfa-sharp " data-map-title="KSA" data-map-link="costa-rica" data-map-image="costa-rica.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10041/jobsearch.ftl?&src=CWS-10230">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                    <!-- To do -->
+                    <a class="map-location-marker marker-argentina tooltipfa-sharp " data-map-title="yemen" data-map-link="argentina" data-map-image="buenos-aires.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10042/jobsearch.ftl?&src=CWS-10230">
+                        <i class="fa-solid fa-location-dot"></i>
+    
+                    </a>
+                    <!-- To do -->
+                    <a class="map-location-marker marker-dubai tooltipfa-sharp " data-map-title="UAU" data-map-link="dubai" data-map-image="dubai.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10044/jobsearch.ftl?&src=CWS-10230">
+                        <i class="fa-solid fa-location-dot"></i>
+    
+                    </a>
                 </div>
             </div>
+            
+          
+        </section>
+              
         </div>
 
         <div class="contact pb-5" id="contact">
             <div class="container pt-5 ">
                 <h2 class="text-center">اتصل بنا</h2>
                 <div class="row pt-5">
-                   <div class="col-lg-6 col-md-6 col-xs-6">
-                    <div class="contact-info pt-2">
-                        <div >
+                   <div class="col-lg-6 col-md-6 col-xs-6 d-flex align-items-center">
+                    <div class="contact-info pt-2 mb-5">
+                        <div style="flex: 1;" class=" justify-content-center align-items-center">
                             <img src="../image/UNIMARK LOGO_icon grey.png" alt="" >
                         </div>
-                        <div class="text-contact">
+                        <div class="text-contact" style="flex: 3;">
                             <p >
-                                وكالة يونيمارك للتسويق - تسليط الضوء على مشروعك شركة متخصصة في تقديم خدمات تسويقية متنوعة ، وإنشاء حلول إبداعية ، وإنشاء محتوى تسويقي فريد ومبتكر. نقدم إستراتيجية تسويق كاملة مبنية على الخطط والتحليل
-
-                                وكالة يونيمارك للتسويق - تسليط الضوء على مشروعك شركة متخصصة في تقديم خدمات تسويقية متنوعة ، وإنشاء حلول إبداعية ، وإنشاء محتوى تسويقي فريد ومبتكر. نقدم إستراتيجية تسويق كاملة مبنية على الخطط والتحليل
+                                	نحـــن نمتـــاز عـــن الشـــركات الأخـــرى العاملـــة في قطـــاع التسويق مـــن خـــلال خدماتنـــا المصممـة لخدمـة كل عميـل طبقـا لاحتياجاتهـم المبنيـة على تحليلنـــا الأولـــي للوضـــع القائـــم
+                                	فريـق عمـل يونيمارك يحمـل أعلى الشـهادات الأكاديميـة والمهنيــة في تخصصــات التســويق والإدارة مــع الخبــرة الطويلـة في قطـاع الأعمـال ممـا يعـزز مـن قدرتهـم على تقديــم أفضــل الحلــول المناسبة والضامنه لنمو أعمال شركاءنا.
+                                	خدماتنـا المقدمـة تتميـز بأنها تطور و تبنى بناءً على تحليل دقيق لواقـع عملائنـا الحالي، والتوصيـات والحلول والتســويقية مبنيــة على هــذا التحليــل الواقعــي الـذي على ضوئه يقـدم مشـروع عمـل مميـز ومتكامـل مســتخدمين أفضــل الأساليب  والممارســات المهنية في قطـاع الأعمـال.
+                                
                             </p>
                         </div>
                     </div>
@@ -499,7 +500,8 @@
                    </div>
                    <div class="col-lg-5 col-md-5 col-xs-5 ms-lg-5">
                     <div class="form ">
-                        <form method="post" action="">
+                        <form method="post" action="../send.php">
+                          <div class="forminput pt-3 pb-2">
                             <label for="name">الاسم</label>
                             <div class="vl"></div>
                             <input type="text" name="name" id="name">
@@ -509,9 +511,10 @@
                             <hr>
                             <label for="meg">الرساله</label>
                             <input name="meg" id="meg">
-                           
+                          </div>
+                            <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">ارسال</button>
+
                         </form>
-                          <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">ارسال</button>
                     </div>
                    </div>
                 </div>
@@ -526,7 +529,7 @@
                         <i class="fa-brands fa-twitter ms-2"></i>
                         <i class="fa-brands fa-facebook ms-2"></i>
                     </div>
-                    <div  class="col-lg-4 col-md-4 col-xs-4">
+                    <div  class="col-lg-4 col-md-4 col-xs-4 col-4">
                         <ul class="align-items-center justify-content-center">
                             <li>الصفحة الرئيسيه</li>
                             <li>من نحن</li>
@@ -535,7 +538,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-3 col-xs-3">
-                        <p>&copy; by unimark</p>
+                        <p>&copy; يونيمارك</p>
                     </div>
                  </div>
                     
@@ -608,5 +611,7 @@
 
      
 </script>
+
+<script src="../map.js"></script>
 </body>
 </html>

@@ -4,12 +4,11 @@
 .about-us .container .row p {
   width: 80% !important;
   text-align: justify !important;
-  height: 100px !important;
-  overflow: scroll !important;
-  overflow: auto !important;
-  scroll-behavior: smooth !important;
-  -ms-overflow-style: none !important; /* IE and Edge */
-  scrollbar-width: none !important;
+  max-height: 150px !important;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
 .about-us .container .row p::-webkit-scrollbar {
   display: none !important; /* Safari and Chrome */
@@ -58,8 +57,7 @@
 
 .welcom {
   color: white;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #d6d5d5), color-stop(80%, #707070));
-  background: linear-gradient(to top right, #d6d5d5 10%, #707070 80%);
+  background-color: black;
 }
 .welcom .container .row {
   overflow: hidden;
@@ -78,9 +76,6 @@
   overflow: hidden;
 }
 
-.mission {
-  background-color: #eee;
-}
 .mission .container .row h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -90,6 +85,8 @@
 }
 .mission .container .row .Polygon {
   max-width: 25% !important;
+  -webkit-transform: rotateY(-194deg);
+          transform: rotateY(-194deg);
 }
 .mission .container .row p {
   font-size: 2rem;
@@ -99,8 +96,7 @@
 }
 
 .overview {
-  background-color: #5A5A5A;
-  color: white;
+  color: black;
 }
 .overview .container .row h1 {
   text-transform: uppercase;
@@ -120,6 +116,11 @@
   background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #d6d5d5), color-stop(80%, #707070));
   background: linear-gradient(to top right, #d6d5d5 10%, #707070 80%);
   color: white;
+}
+.whous div {
+  background: url("../images/john-schnobrich-FlPc9_VocJ4-unsplash.png");
+  height: 260px;
+  background-size: cover;
 }
 .whous .container {
   padding: 0 !important;
