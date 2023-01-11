@@ -1,3 +1,7 @@
+.wrapper {
+  background: white;
+}
+
 .modalbook {
   position: absolute;
   width: 100%;
@@ -6,7 +10,6 @@
   display: none;
   background-color: rgba(238, 238, 238, 0.392);
 }
-
 .modalbook .modal-content {
   position: absolute;
   top: 50%;
@@ -20,20 +23,17 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#fffbfb), to(#a7a7a7)) !important;
   background: linear-gradient(#fffbfb, #a7a7a7) !important;
 }
-
 .modalbook .modal-content .cloes {
   position: absolute;
   top: 5%;
   right: 11%;
   cursor: pointer;
 }
-
 .modalbook .modal-content form {
   position: relative;
   left: 0;
   margin: auto;
 }
-
 .modalbook .modal-content form label {
   position: absolute;
   left: -20px;
@@ -46,19 +46,15 @@
   top: 125px;
   border: rgba(51, 51, 51, 0.222) 1px solid;
 }
-
 .modalbook .modal-content form label:first-child {
   top: 15px;
 }
-
 .modalbook .modal-content form label:nth-child(3) {
   top: 71px;
 }
-
 .modalbook .modal-content form label:last-child {
   top: 50px;
 }
-
 .modalbook .modal-content input[type=text] {
   text-align: center;
   border-radius: 10px;
@@ -69,16 +65,14 @@
   display: block;
   position: relative;
 }
-
 .modalbook .modal-content input[type=text]:first-of-type:before {
-  content: 'Name';
+  content: "Name";
   position: absolute;
   color: white;
   height: 100%;
   width: 30px;
   background-color: #D70000;
 }
-
 .modalbook .modal-content button {
   border-radius: 10px;
   padding: 2px 15px;
@@ -90,30 +84,27 @@
   color: #D70000;
   z-index: 5;
 }
-
 .modalbook .modal-content button::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 100%;
   background-color: transparent;
   left: 0;
   bottom: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: -1;
   border-radius: 10px;
 }
-
 .modalbook .modal-content button:hover::after {
   width: 100%;
   height: 100%;
   background-color: #D70000;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: -1;
 }
-
 .modalbook .modal-content button:hover {
   color: #EDEDED;
 }
@@ -125,7 +116,6 @@
 .contact-us .container .height {
   max-height: 270px;
 }
-
 .contact-us .container h3 {
   text-align: start !important;
   letter-spacing: 2px;
@@ -134,7 +124,6 @@
   font-weight: normal !important;
   margin-right: 30px;
 }
-
 .contact-us .container .row p {
   width: 80% !important;
   text-align: justify !important;
@@ -142,14 +131,11 @@
   overflow: scroll !important;
   overflow: auto !important;
   scroll-behavior: smooth !important;
-  -ms-overflow-style: none !important;
-  /* IE and Edge */
+  -ms-overflow-style: none !important; /* IE and Edge */
   scrollbar-width: none !important;
 }
-
 .contact-us .container .row p::-webkit-scrollbar {
-  display: none !important;
-  /* Safari and Chrome */
+  display: none !important; /* Safari and Chrome */
 }
 
 .imagecenter {
@@ -158,7 +144,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .imagecenter img {
   width: 100%;
   height: 100%;
@@ -168,4 +153,3 @@
   background: -webkit-gradient(linear, right top, left top, from(#eee), to(#707070));
   background: linear-gradient(to left, #eee, #707070);
 }
-/*# sourceMappingURL=stylecontactus.css.map */

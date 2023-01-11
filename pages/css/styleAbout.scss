@@ -1,4 +1,6 @@
-
+.wrapper{
+    background: white !important;
+}
 .img-arrow{
     max-width: 10% !important;
     position:absolute;
@@ -156,7 +158,7 @@ background-color: #eee;
     background:linear-gradient(to top right,#d6d5d5 10%, #707070 80%);
    color: white;
    div{
-    background: url('../images/john-schnobrich-FlPc9_VocJ4-unsplash.png');
+    background: url('../../image/john-schnobrich-FlPc9_VocJ4-unsplash.png');
 
     height: 260px;
     background-size: cover;
@@ -172,9 +174,9 @@ background-color: #eee;
             }
             p{
                 max-width: 90%;
-                letter-spacing: 2px;
+                // letter-spacing: 2px;
                 font-size: 1.3rem;
-                word-spacing: 1px;
+                // word-spacing: 1px;
             }
         }
     }

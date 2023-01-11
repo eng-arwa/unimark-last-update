@@ -1,11 +1,14 @@
 
 
 .carsoul{
-    background-color: rgba(51, 51, 51, 0.57) ;
+    background: url('../image/Group\ 34.png') ;
+    background-size: cover  ;
     max-width: 100%;
-    height:200px;
-    
+    min-width: 100%;
+    height:300px;
+    background-repeat: no-repeat;
     position: relative;
+    background-position: center;
    
    
 }
@@ -52,6 +55,7 @@
     max-height: 100%;
 }
 .traingale{
+    display: none;
     position: absolute;
     left: 0;
     max-width: 100%;

@@ -466,3 +466,47 @@
   height: auto;
   max-width: 100%;
 }
+
+
+
+/* custom */
+.info{
+
+  position: relative;
+}
+.info::before{
+  content: '';
+  position: absolute;
+  right: -101px;
+  width: 100px;
+  height: 35px;
+  color: white;
+  display: none;
+text-align: center;
+  top: -22px;
+  background-color: #333;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.info:first-child:before{
+  content: 'KSA ';
+}
+.info:nth-child(2):before{
+  content: 'Yemen ';
+}
+.info:last-child:before{
+  content: 'UAU ';
+}
+
+.info::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 20px;
+  background-color: #eee;
+}
+.info:hover::before{
+  display: block;
+}

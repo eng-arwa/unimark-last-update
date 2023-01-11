@@ -90,8 +90,6 @@
 }
 .mission .container .row p {
   font-size: 2rem;
-  letter-spacing: 5px;
-  word-spacing: 5px;
   max-width: 70%;
 }
 
@@ -176,6 +174,6 @@
 }
 @media (max-width: 1390px) {
   .welcom p, .overview p, .whous p, .mission p {
-    font-size: 0.6rem !important;
+    font-size: 1rem !important;
   }
 }

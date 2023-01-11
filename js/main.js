@@ -24,6 +24,7 @@
     
 // })
 
+
 // open modal
 
 // slick-slide slick-current slick-active slick-center
@@ -51,8 +52,20 @@ function servicesEn(){
         window.open('./mobile.html');
         
     }
+    else if (currentslide == 'slick-slide05') {
+        window.open('./Written-content.html');
+        
+    }
+    else if (currentslide == 'slick-slide06') {
+        window.open('./create-brand.html');
+        
+    }
+    else if (currentslide == 'slick-slide07') {
+        window.open('./Advert.html');
+        
+    }
     else {
-         window.open('./mobile.html');  
+         window.open('./order-gallery.html');  
     }
   
    
@@ -79,8 +92,21 @@ function servicesar(){
         window.open('./mobile-rtl.html');
         
     }
+  
+    else if (currentslide == 'slick-slide05') {
+        window.open('./Written-content.html');
+        
+    }
+    else if (currentslide == 'slick-slide06') {
+        window.open('./create-brand.html');
+        
+    }
+    else if (currentslide == 'slick-slide07') {
+        window.open('./Advert.html');
+        
+    }
     else {
-         window.open('./mobile-rtl.html');  
+         window.open('./order-gallery.html');  
     }
   
    
@@ -107,8 +133,20 @@ function servicesindexEn(){
         window.open('./pages/mobile.html');
         
     }
+    else if (currentslide == 'slick-slide05') {
+        window.open('./pages/Written-content.html');
+        
+    }
+    else if (currentslide == 'slick-slide06') {
+        window.open('./pages/create-brand-content.hml');
+        
+    }
+    else if (currentslide == 'slick-slide07') {
+        window.open('./pages/Advert.html');
+        
+    }
     else {
-         window.open('./pages/mobile.html');  
+         window.open('./pages/order-gallery.html');  
     }
   
    
@@ -135,8 +173,20 @@ function servicesindexEer(){
         window.open('./pages/mobile-rtl.html');
         
     }
+    else if (currentslide == 'slick-slide05') {
+        window.open('./pages/Written-content.html');
+        
+    }
+    else if (currentslide == 'slick-slide06') {
+        window.open('./pages/create-brand-content.hml');
+        
+    }
+    else if (currentslide == 'slick-slide07') {
+        window.open('./pages/Advert.html');
+        
+    }
     else {
-         window.open('./pages/mobile-rtl.html');  
+         window.open('./pages/order-gallery.html');  
     }
   
    

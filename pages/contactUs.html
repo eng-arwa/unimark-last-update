@@ -33,11 +33,12 @@
     <nav class="fixed-top">
         <div class="container">
          <ul class="menu-list">
+            <li><div class="logo"></div></li>
+
              <li ><a href="../index.html">home</a></li>
              <li ><a href="./aboutUs.html">about us</a>
              </li>
              <li ><a href="./services.html">services</a></li>
-             <li><div class="logo"></div></li>
             
              
              <li ><a href="./contactUs.html">contact us</a></li>
@@ -52,7 +53,7 @@
                  <li>
               <div class="search-wrapper">
                 <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <input id="textsearch" onkeyup="search()" type="text" class="search-input" placeholder="Type to search" />
                     <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                 </div>
                 <span class="close" onclick="searchToggle(this, event);"></span>
@@ -147,7 +148,7 @@
                   <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-xs-12 pt-4">
-                    <img src="../../image/Path 17.png" alt=""></div>
+                    <img src="../image/Path 17.png" alt=""></div>
                         <div class="col-lg-12 col-md-12 col-xs-12 ms-lg-5 "> <h3 class="ms-5">Countact us</h3></div>
                         <div class="col-lg-12 col-md-12 col-xs-12  ms-lg-5 height"> 
                             <p class="ms-5 w-75">
@@ -170,7 +171,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-5 right d-none d-sm-block d-sm-none d-md-block">
                    <div class="box">
-                    <img src="../image/Component 32 – 1.png" alt="">
+                    <img src="../image/Component.png" alt="">
                    </div>
                 </div>
             </div>
@@ -185,19 +186,19 @@
                 
         <section id="places-map">
             <div class="map animate-fade-in">
-                <img src="https://unimarkme.com/wp-content/uploads/2021/12/Asset-3.svg" alt="Map of Western Union Locations" width="903" height="452" />
+                <img src="../image/world-map-png-35421.png" alt="Map of Western Union Locations"  width="903" height="452" />
                 <div class="map-pins">
                    
-                    <a class="map-location-marker marker-costa-rica tooltipfa-sharp " data-map-title="KSA" data-map-link="costa-rica" data-map-image="costa-rica.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10041/jobsearch.ftl?&src=CWS-10230">
-                        <i class="fa-solid fa-location-dot"></i>
+                    <a class="map-location-marker marker-costa-rica tooltipfa-sharp info" data-map-title="KSA"  >
+                        <i class="fa-solid fa-location-dot "></i>
                     </a>
                     <!-- To do -->
-                    <a class="map-location-marker marker-argentina tooltipfa-sharp " data-map-title="yemen" data-map-link="argentina" data-map-image="buenos-aires.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10042/jobsearch.ftl?&src=CWS-10230">
-                        <i class="fa-solid fa-location-dot"></i>
+                    <a class="map-location-marker marker-argentina tooltipfa-sharp info" data-map-title="yemen"  >
+                        <i class="fa-solid fa-location-dot "></i>
     
                     </a>
                     <!-- To do -->
-                    <a class="map-location-marker marker-dubai tooltipfa-sharp " data-map-title="UAU" data-map-link="dubai" data-map-image="dubai.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10044/jobsearch.ftl?&src=CWS-10230">
+                    <a class="map-location-marker marker-dubai tooltipfa-sharp info" data-map-title="UAU"  >
                         <i class="fa-solid fa-location-dot"></i>
     
                     </a>
@@ -212,12 +213,12 @@
         <div class="container pt-5 ">
             <h2 class="text-center"></h2>
             <div class="row pt-5">
-               <div class="col-lg-6 col-md-6 col-xs-6">
+               <div class="col-lg-6 col-md-12 mb-5 col-xs-6 pt-4">
                 <div class="contact-info pt-2">
-                    <div >
+                    <div style="flex: 1;">
                         <img src="../image/UNIMARK LOGO_icon grey.png" alt="" >
                     </div>
-                    <div class="text-contact">
+                    <div class="text-contact" style="flex: 3;">
                         <p >
                             Unimark Marketing Agency - Highlight Your Project A Company Specialized In Providing Various Marketing Services, Creating Creative Solutions, And Creating Unique And Innovative Marketing Content. We Offer A Complete Marketing Strategy Based On Plans, Analy
 
@@ -227,10 +228,10 @@
                 </div>
                 
                </div>
-               <div class="col-lg-5 col-md-5 col-xs-5 ms-lg-5">
+               <div class="col-lg-5 col-md-12 col-xs-5 ms-lg-5">
                 <div class="form ">
                     <form method="post" action="../send.php">
-                     <div class="forminput">
+                     <div class="forminput pt-3 pb-3">
                         <label for="name">name</label>
                         <div class="vl"></div>
                         <input type="text" name="name" id="name">
@@ -250,7 +251,7 @@
         </div>
         </div>
         <footer>
-            <div class="container pt-4 pb-4">
+            <div class="container-fluid pt-4 pb-4">
              <div class="row text-center">
                 <div class="col-lg-4 col-md-4 col-xs-4 ms-lg-2">
                     <i class="fa-brands fa-instagram me-2"></i>

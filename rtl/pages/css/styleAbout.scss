@@ -116,8 +116,8 @@
         }
         p{
             font-size: 2rem;
-            letter-spacing: 5px;
-            word-spacing: 5px;
+            // letter-spacing: 5px;
+            // word-spacing: 5px;
             max-width: 70%;
         }
         }
@@ -209,7 +209,7 @@
 @media (max-width:1390px) {
     .welcom , .overview , .whous , .mission{
         p{
-            font-size: .6rem !important;
+            font-size: 1rem !important;
         }
     }
 }

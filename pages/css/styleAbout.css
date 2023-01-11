@@ -1,3 +1,7 @@
+.wrapper {
+  background: white !important;
+}
+
 .img-arrow {
   max-width: 10% !important;
   position: absolute;
@@ -126,7 +130,7 @@
   color: white;
 }
 .whous div {
-  background: url("../images/john-schnobrich-FlPc9_VocJ4-unsplash.png");
+  background: url("../../image/john-schnobrich-FlPc9_VocJ4-unsplash.png");
   height: 260px;
   background-size: cover;
 }
@@ -140,9 +144,7 @@
 }
 .whous .container .row p {
   max-width: 90%;
-  letter-spacing: 2px;
   font-size: 1.3rem;
-  word-spacing: 1px;
 }
 
 .employ {

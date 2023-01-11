@@ -1,3 +1,6 @@
+.wrapper{
+    background: white !important;
+}
 .home{
     position: relative;
     background: white !important;
@@ -27,8 +30,8 @@
                 font-weight: bolder;
             }
             p{
-                font-weight: 500;
-                max-height: 100px;
+                font-weight: bold;
+                max-height: 130px;
                 overflow: auto;
                 scroll-behavior: smooth;
                 -ms-overflow-style: none;  /* IE and Edge */

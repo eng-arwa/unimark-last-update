@@ -2,7 +2,7 @@
     /* big landscape tablets, laptops, and desktops */
 
     .carsoul{
-        max-height: 200px !important;
+        max-height: 300px !important;
     } 
     .slick-slide p{
         font-size:1rem !important;
@@ -27,6 +27,14 @@
 /* medua */
 
 @media (min-width:320px)  { 
+    .headtitle {
+        font-weight: normal;
+        font-size: 2rem;
+    }
+    .parent-carsoul {
+        padding-top: 0;
+
+        padding-bottom: 0;    }
  
     .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
        
@@ -35,7 +43,8 @@
             font-size: 14px !important;
         }
     .carsoul{
-        max-height: 120px;
+        max-height: 200px;
+        background-size: contain;
     } 
     .slick-slide p{
         font-size: .4rem;
@@ -85,6 +94,12 @@
 @media (min-width:481px)  {
      /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px)  {
+    .headtitle {
+        font-weight: normal;
+        font-size: 4rem !important;}
+    .parent-carsoul{
+        padding: 100px 0 !important;
+    }
     .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
        
         font-size: 29px !important;}
@@ -98,7 +113,9 @@
      /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { 
     .carsoul{
-        max-height: 200px !important;
+        background-size: contain !important;
+        min-height: 370px;
+        max-height: 370px !important;
     } 
     .carsoul .content{
         transform: translateY(-50% ) !important;

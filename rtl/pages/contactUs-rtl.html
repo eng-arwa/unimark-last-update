@@ -23,25 +23,28 @@
         <div class="modal-content">
             <span class="cloes"><i class="fa-solid fa-xmark"></i></span>
             <form action="">
-                <label for="name">Name</label>
+                <label for="name">الاسم</label>
                 <input type="text" name="name">
-                <label for="phone">Phone</label>
+                <label for="phone">الرقم</label>
             <input type="text" name="phone" id="">
-            <label for="servicestype">Services type</label>
+            <label for="servicestype">الخدمة </label>
             <input type="text" name="servicestype" id="">
-            <button type="submit" class="m-auto center">Send</button>
+            <button type="submit" class="m-auto center">ارسال
+
+            </button>
             </form>
         </div>
        </div>
        <nav class="fixed-top">
         <div class="container">
          <ul class="menu-list">
+            <li><div class="logo"></div></li>
+
              <li ><a href="../index-rtl.html">الصفحة الرئيسيه</a></li>
              <li ><a href="./aboutUs-rtl.html"> من نحن
              </a>
              </li>
              <li ><a href="./services-rtl.html">خدماتنا</a></li>
-             <li><div class="logo"></div></li>
             
             
              <li ><a href="./contactUs-rtl.html">تواصل معنا </a></li>
@@ -57,7 +60,7 @@
              <li>
               <div class="search-wrapper">
                 <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <input type="text" class="search-input" placeholder="Type to search" id="textsearch" onkeyup="search()" />
                     <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                 </div>
                 <span class="close" onclick="searchToggle(this, event);"></span>
@@ -152,7 +155,7 @@
                   <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-xs-12 pt-4">
-                    <img src="../image/Path 17.png" alt=""></div>
+                    <img src="../../image/Path 17.png" alt=""></div>
                         <div class="col-lg-12 col-md-12 col-xs-12 ms-lg-5 "> <h3 class="ms-5">Countact us</h3></div>
                         <div class="col-lg-12 col-md-12 col-xs-12  ms-lg-5 height"> 
                             <p class="ms-5 w-75">
@@ -166,7 +169,7 @@
                                 </p>
                         </div>
                         <div class="col-lg-12 col-md-12 col-xs-12 ms-lg-5"> 
-                            <button class="ms-5 mt-2" onclick="model()">Book Now</button>
+                            <button class="ms-5 mt-2" onclick="model()">احجز الان </button>
                         </div>
     
                     </div>
@@ -175,7 +178,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-5 right d-none d-sm-block d-sm-none d-md-block">
                    <div class="box">
-                    <img src="../../image/Component 32 – 1.png" alt="">
+                    <img src="../../image/Component.png" alt="">
                    </div>
                 </div>
             </div>
@@ -185,24 +188,24 @@
    
     <div class="branches pt-5" id="">
     
-        <h3 class="text-center pt-2 pb-2">Our Branches</h3>
+        <h3 class="text-center pt-2 pb-2">فروعنا</h3>
         
                 
         <section id="places-map">
             <div class="map animate-fade-in">
-                <img src="https://unimarkme.com/wp-content/uploads/2021/12/Asset-3.svg" alt="Map of Western Union Locations" width="903" height="452" />
+                <img src="../../image/world-map-png-35421.png" alt="Map of Western Union Locations"  width="903" height="452" />
                 <div class="map-pins">
                    
-                    <a class="map-location-marker marker-costa-rica tooltipfa-sharp " data-map-title="KSA" data-map-link="costa-rica" data-map-image="costa-rica.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10041/jobsearch.ftl?&src=CWS-10230">
-                        <i class="fa-solid fa-location-dot"></i>
+                    <a class="map-location-marker marker-costa-rica tooltipfa-sharp info" data-map-title="KSA"  >
+                        <i class="fa-solid fa-location-dot "></i>
                     </a>
                     <!-- To do -->
-                    <a class="map-location-marker marker-argentina tooltipfa-sharp " data-map-title="yemen" data-map-link="argentina" data-map-image="buenos-aires.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10042/jobsearch.ftl?&src=CWS-10230">
-                        <i class="fa-solid fa-location-dot"></i>
+                    <a class="map-location-marker marker-argentina tooltipfa-sharp info" data-map-title="yemen"  >
+                        <i class="fa-solid fa-location-dot "></i>
     
                     </a>
                     <!-- To do -->
-                    <a class="map-location-marker marker-dubai tooltipfa-sharp " data-map-title="UAU" data-map-link="dubai" data-map-image="dubai.jpg" data-job-listings="https://westernunion.taleo.net/careersection/10044/jobsearch.ftl?&src=CWS-10230">
+                    <a class="map-location-marker marker-dubai tooltipfa-sharp info" data-map-title="UAU"  >
                         <i class="fa-solid fa-location-dot"></i>
     
                     </a>
@@ -217,12 +220,12 @@
         <div class="container pt-5 ">
             <h2 class="text-center">اتصل بنا</h2>
             <div class="row pt-5 parent-web">
-               <div class="col-lg-6 col-md-6 col-xs-6">
+               <div class="col-lg-6 col-md-6 col-xs-6 pt-4">
                 <div class="contact-info pt-2">
-                    <div >
-                        <img src="./image/UNIMARK LOGO_icon grey.png" alt="" >
+                    <div style="flex: 1;">
+                        <img src="../../image/UNIMARK LOGO_icon grey.png" alt="" >
                     </div>
-                    <div class="text-contact">
+                    <div class="text-contact" style="flex: 3;">
                         <p >
                             وكالة يونيمارك للتسويق - تسليط الضوء على مشروعك شركة متخصصة في تقديم خدمات تسويقية متنوعة ، وإنشاء حلول إبداعية ، وإنشاء محتوى تسويقي فريد ومبتكر. نقدم إستراتيجية تسويق كاملة مبنية على الخطط والتحليل
 
@@ -235,7 +238,7 @@
                <div class="col-lg-5 col-md-5 col-xs-5 ms-lg-5">
                 <div class="form ">
                     <form method="post" action="../../send.php">
-                       <div class="forminput">
+                       <div class="forminput pt-3 pb-3">
                         <label for="name">الاسم</label>
                         <div class="vl"></div>
                         <input type="text" name="name" id="name">
@@ -255,7 +258,7 @@
         </div>
         </div>
         <footer>
-            <div class="container pt-4 pb-4">
+            <div class="container-fluid pt-4 pb-4">
              <div class="row text-center">
                 <div class="col-lg-4 col-md-4 col-xs-4 ms-lg-2">
                     <i class="fa-brands fa-instagram ms-2"></i>

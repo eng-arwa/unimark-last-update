@@ -177,4 +177,7 @@ westernUnionResize( jQuery, window );
 			});
 	}
 
-}(jQuery,window));
+}(jQuery, window));
+
+
+let datamap=document.quer
