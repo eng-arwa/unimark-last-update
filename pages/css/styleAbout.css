@@ -1,3 +1,7 @@
+nav ul li a, nav ul li svg {
+  color: white !important;
+}
+
 .wrapper {
   background: white !important;
 }
@@ -11,6 +15,9 @@
 .about-us {
   background-position: top;
 }
+.about-us .container .row {
+  z-index: 3;
+}
 .about-us .container .row p {
   width: 80% !important;
   text-align: justify !important;
@@ -23,6 +30,9 @@
 }
 .about-us .container .row p::-webkit-scrollbar {
   display: none !important; /* Safari and Chrome */
+}
+.about-us .scroll {
+  z-index: 3;
 }
 .about-us .right .image {
   position: relative;
@@ -92,7 +102,6 @@
 }
 .mission .container .row h1 {
   text-transform: uppercase;
-  letter-spacing: 3px;
 }
 .mission .container .row img {
   max-width: 100%;
@@ -102,8 +111,6 @@
 }
 .mission .container .row p {
   font-size: 1.2rem;
-  letter-spacing: 5px;
-  word-spacing: 5px;
   max-width: 70%;
 }
 
@@ -112,13 +119,12 @@
 }
 .overview .container .row h1 {
   text-transform: uppercase;
-  letter-spacing: 3px;
 }
 .overview .container .row img {
   max-width: 100%;
 }
 .overview .container .row .Polygon {
-  max-width: 25% !important;
+  max-width: 15% !important;
 }
 .overview .container .row p {
   max-width: 70%;

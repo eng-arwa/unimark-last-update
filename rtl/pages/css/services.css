@@ -1,3 +1,7 @@
+nav ul li a, nav ul li svg {
+  color: white !important;
+}
+
 .parentcarsoul {
   background-color: black;
   padding-bottom: 180px;
@@ -25,7 +29,7 @@
   margin-top: 0;
 }
 .home .service .parograph {
-  max-height: 100px;
+  max-height: 159px;
   max-width: 70%;
   overflow: auto;
   overflow: scroll;
@@ -52,7 +56,7 @@
 }
 
 .services-type {
-  background: url("../images/BACKGROUND BLUR.png") #eee;
+  background: url("../../../pages/images/BACKGROUND BLUR.png") #eee;
   background-size: cover;
 }
 .services-type .row {
@@ -109,7 +113,7 @@
 .services-type .container p {
   font-weight: 500;
   max-height: 100px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   width: 60%;
   overflow: auto;
   scroll-behavior: smooth;

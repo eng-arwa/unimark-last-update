@@ -3,6 +3,10 @@
   float: left;
 }
 
+.headtitle {
+  letter-spacing: 0 !important;
+}
+
 .img-arrow {
   max-width: 10% !important;
   position: absolute;

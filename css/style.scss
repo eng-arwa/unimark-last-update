@@ -13,7 +13,7 @@ body{
 // start nav
 nav{
     // background: linear-gradient(#fffbfb,#a7a7a7) !important;
- background-color: white;
+ background-color: transparent;
     // border-bottom-left-radius: 25px;
     
    max-width: 100%;
@@ -65,7 +65,7 @@ nav{
                     position: relative;
               
                 &:not(:nth-child(3)):hover{
-                    color: rgb(169, 3, 3);
+                    color: #D70000 !important;
     
                 }
                 &:last-child():hover{
@@ -232,7 +232,7 @@ div{
     background-color: black;
     background-position: bottom;
    min-height: 101vh;
-   max-height: 101vh;
+  
     background-size: contain;
     color: white;
     background-repeat: no-repeat;
@@ -392,7 +392,7 @@ div{
 }
 .headtitle{
     font-weight: normal;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 4px;
 
 }
@@ -403,7 +403,7 @@ div{
     background: black;
 }
 .carsoul{
-    background-color: black;
+  
     z-index: 3;
   
     .left-1{

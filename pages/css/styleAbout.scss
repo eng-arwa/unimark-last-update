@@ -1,3 +1,7 @@
+
+nav ul li a , nav ul li svg{
+    color: white !important;
+}
 .wrapper{
     background: white !important;
 }
@@ -12,7 +16,7 @@
     .container{
         .row{
       
-        
+         z-index: 3;
             p{
                 width: 80% !important;
                 text-align: justify !important;
@@ -32,7 +36,9 @@
         }
           
           }
-
+          .scroll{
+            z-index: 3;
+          }
      .right{
        .image{
         position: relative;
@@ -110,7 +116,7 @@ background-color: #eee;
         .row{
             h1{
                 text-transform: uppercase;
-                letter-spacing: 3px;
+               
             }
             img{
                 max-width: 100%;
@@ -122,8 +128,7 @@ background-color: #eee;
         }
         p{
             font-size: 1.2rem;
-            letter-spacing: 5px;
-            word-spacing: 5px;
+           
             max-width: 70%;
         }
         }
@@ -136,14 +141,14 @@ background-color: #eee;
             .row{
                 h1{
                     text-transform: uppercase;
-                    letter-spacing: 3px;
+                  
                 }
                 img{
                     max-width: 100%;
                 }
                 .Polygon{
            
-                    max-width: 25% !important;
+                    max-width: 15% !important;
                
             }
             p{

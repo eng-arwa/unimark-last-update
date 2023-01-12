@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  background-color: white;
+  background-color: transparent;
   max-width: 100%;
   width: 100%;
 }
@@ -57,7 +57,7 @@ nav .container .menu-mobile ul li a {
   position: relative;
 }
 nav .container .menu-mobile ul li a:not(:nth-child(3)):hover {
-  color: rgb(169, 3, 3);
+  color: #D70000 !important;
 }
 nav .container .menu-mobile ul li a:last-child():hover {
   color: black;
@@ -182,7 +182,6 @@ nav .container .menu-list .parent:hover .logo-1 {
   background-color: black;
   background-position: bottom;
   min-height: 101vh;
-  max-height: 101vh;
   background-size: contain;
   color: white;
   background-repeat: no-repeat;
@@ -319,7 +318,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 
 .headtitle {
   font-weight: normal;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 4px;
 }
 
@@ -330,7 +329,6 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .carsoul {
-  background-color: black;
   z-index: 3;
 }
 .carsoul .left-1 {

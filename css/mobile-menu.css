@@ -53,9 +53,15 @@
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background: white;
+  background: #1f1f1f;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
+}
+.menu__box li a{
+  color: white !important;
+}
+.menu__box li svg{
+  color: #d70000;
 }
 .menu__item {
   display: block;
@@ -99,7 +105,7 @@
   top: 40px;
   left: 0;
   padding: 20px;
- background-color: white;
+ background-color: #1f1f1f4c;
  box-shadow: 5px 5px 2px #eee;
 }
 
@@ -118,6 +124,6 @@
   text-decoration: none;
 }
 .langselect ul li:hover {
-background-color: transparent;
+/* background-color: transparent; */
 }
 

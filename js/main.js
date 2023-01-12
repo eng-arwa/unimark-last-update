@@ -1,3 +1,25 @@
+let myNav = document.querySelector('nav');
+let menu = document.querySelectorAll('nav .menu-list li a')
+let langicon=document.querySelector('.langselect')
+
+window.onscroll = () => {
+  
+    if (window.scrollY > 400) {
+        myNav.style.backgroundColor = '#1f1f1fc4';
+        langicon.style.color='white'
+        menu.forEach(e => {
+            e.style.color='white'
+        })
+    } 
+    else{
+        myNav.style.backgroundColor = 'transparent';
+        menu.forEach(e => {
+            e.style.color='black'
+        })
+        langicon.style.color='black'
+
+    }
+};
 
 // setTimeout(() => {
 //     let top=document.querySelector('.top i a')
@@ -212,10 +234,17 @@ menulang.addEventListener('mouseleave', () => {
 function model(){
     document.querySelector('.modalbook').style.display = 'block';
 }
-let closeicon = document.querySelector('.cloes');
-closeicon.addEventListener('click', () => {
-    document.querySelector('.modalbook').style.display = 'none'
-});
+let closeicon = document.querySelectorAll('.cloes');
+closeicon.forEach( (e) => {
+    e.addEventListener('click', () => {
+        document.querySelector('.modalbook').style.display = 'none'
+        document.querySelector('.modalcontact').style.display = 'none'
+    });
+})
+function model2(){
+    document.querySelector('.modalcontact').style.display = 'block';
+}
+
 
 
 // slide arrow change
@@ -233,5 +262,6 @@ closeicon.addEventListener('click', () => {
 
 
 
+// start nav scrolling
 
 
