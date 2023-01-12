@@ -1,11 +1,14 @@
 .wrapper{
     background: white !important;
 }
+nav ul li a , nav ul li svg{
+    color: white !important;
+}
 .home{
     position: relative;
  
-   color: black !important;
-   background:url('../../../image/Layer\ 6.png') ;
+  
+   background:url('../../../image/Layer\ 6.png') black;
    background-size: cover;
     background-size:cover;
     color: white;

@@ -1,93 +1,26 @@
-
+nav ul li a, nav ul li svg {
+    color: white !important;
+}
 .wrapper{
     background: white !important;
 }
-.menu-mobile{
-    display: none ;
-    .logo {
-        background: url('../../image/UNIMARK\ LOGO.png') !important;
-        transition: all 0.3s ease-in;
-        width: 125px;
-        height: 28px;
-        margin: auto;
-        background-size: 125px 28px;
-        background-position: 0 0;
-        background-repeat: no-repeat;
-      }
-      .logo:hover {
-        background: url('../image/Path\ 12.png');
-        background-size: 31px 28px;
-        background-position: center center;
-        background-repeat: no-repeat;
-      }
-    
-   ul{
-   
-    display: flex !important;
-    flex-direction: column !important;
-    list-style: none !important;
 
-    gap: 30px;
-    li{
-        svg{
-            font-size: 25px;
-        }
-        
-        
-        
-           
-        
-        a{
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 1.2rem;
-            position: relative;
-      
-        &:not(:nth-child(3)):hover{
-            color: #D70000 !important;
-
-        }
-        &:last-child():hover{
-            color: black;
-
-        }
-       
-           
-        }
-         
-    
-       .logo-1{
-        display: none;
-       }
-        
-    }
-   }
-
-}
 .home{
-    background:url('../../../image/Layer\ 6.png') ;
+    background:url('../../../image/Layer\ 6.png') black;
     background-size: cover;
      background-size:cover;
      color: white;
     position: relative;
     // background: url('../images/theme-photos-CGpifH3FjOA-unsplash.png');
-    background: white !important;
-    color: black !important;
+ 
+  
     background-size:100%;
    background-position: center;
     background-repeat: no-repeat;
    
   max-width: 100%;
   max-height: 100%;
-  .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    // background-color: rgba(238, 238, 238, 0.407);
-  }
+ 
   .container-fluid{
     padding: 0;
     margin: 0;
@@ -103,6 +36,7 @@
                 font-weight: bolder;
             }
             p{
+                color: white;
                 font-weight: 500;
                 max-height: 100px;
                 overflow: auto;

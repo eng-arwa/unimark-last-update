@@ -2,6 +2,9 @@
 .wrapper{
     background: white !important;
 }
+nav ul li a , nav ul li svg{
+    color: white !important;
+}
 .home{
     background:url('../../../image/Layer\ 6.png') ;
     background-size: cover;
@@ -9,21 +12,15 @@
      color: white;
     position: relative;
     // background: url('../images/theme-photos-CGpifH3FjOA-unsplash.png');
-    background: white !important;
-    color: black !important;
+   
+
     background-size:100%;
    background-position: center;
     background-repeat: no-repeat;
    
   max-width: 100%;
   max-height: 100%;
-  .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    // background-color: rgba(238, 238, 238, 0.407);
-  }
+ 
   .container-fluid{
     padding: 0;
     margin: 0;
