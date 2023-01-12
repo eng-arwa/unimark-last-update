@@ -3,9 +3,7 @@
 }
 
 .home {
-  background-color: black !important;
   background: url("../../image/Layer 6.png") black;
-  color: black !important;
   background-size: cover;
   color: white;
   position: relative;

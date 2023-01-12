@@ -1,11 +1,9 @@
 .home {
-  background: url("../../../image/Layer 6.png");
+  background: url("../../../image/Layer 6.png") black;
   background-size: cover;
   background-size: cover;
   color: white;
   position: relative;
-  background: white !important;
-  color: black !important;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
