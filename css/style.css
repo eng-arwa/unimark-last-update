@@ -18,7 +18,7 @@ nav .container .menu-mobile {
   display: none;
 }
 nav .container .menu-mobile .logo {
-  background: url("../image/UNIMARK LOGO.png");
+  background: url("../image/UNIMARK LOGO_white.png");
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   width: 125px;
@@ -86,7 +86,7 @@ nav .container .menu-list li svg {
   font-size: 25px;
 }
 nav .container .menu-list li .logo {
-  background: url("../image/UNIMARK LOGO.png");
+  background: url("../image/UNIMARK LOGO_white.png");
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   width: 125px;
