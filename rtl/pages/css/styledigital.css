@@ -3,6 +3,10 @@
 }
 
 .home {
+  background: url("../../../image/Layer 6.png");
+  background-size: cover;
+  background-size: cover;
+  color: white;
   position: relative;
   background: white !important;
   color: black !important;
@@ -22,6 +26,9 @@
   padding: 0;
   margin: 0;
 }
+.home .container-fluid .row h2 {
+  color: white;
+}
 .home .container-fluid .row .content {
   width: 100%;
   z-index: 4;
@@ -33,6 +40,7 @@
 .home .container-fluid .row .content p {
   font-weight: bold;
   max-height: 130px;
+  color: white;
   overflow: auto;
   scroll-behavior: smooth;
   -ms-overflow-style: none; /* IE and Edge */

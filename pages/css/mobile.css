@@ -2,7 +2,63 @@
   background: white !important;
 }
 
+.menu-mobile {
+  display: none;
+}
+.menu-mobile .logo {
+  background: url("../../image/UNIMARK LOGO.png") !important;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 125px;
+  height: 28px;
+  margin: auto;
+  background-size: 125px 28px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.menu-mobile .logo:hover {
+  background: url("../image/Path 12.png");
+  background-size: 31px 28px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.menu-mobile ul {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  list-style: none !important;
+  gap: 30px;
+}
+.menu-mobile ul li svg {
+  font-size: 25px;
+}
+.menu-mobile ul li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+}
+.menu-mobile ul li a:not(:nth-child(3)):hover {
+  color: #D70000 !important;
+}
+.menu-mobile ul li a:last-child():hover {
+  color: black;
+}
+.menu-mobile ul li .logo-1 {
+  display: none;
+}
+
 .home {
+  background: url("../../../image/Layer 6.png");
+  background-size: cover;
+  background-size: cover;
+  color: white;
   position: relative;
   background: white !important;
   color: black !important;
@@ -21,6 +77,9 @@
 .home .container-fluid {
   padding: 0;
   margin: 0;
+}
+.home .container-fluid .row h2 {
+  color: white;
 }
 .home .container-fluid .row .content {
   width: 100%;

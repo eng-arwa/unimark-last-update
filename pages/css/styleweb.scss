@@ -4,6 +4,10 @@
 }
 
 .home{
+    background:url('../../../image/Layer\ 6.png') ;
+    background-size: cover;
+     background-size:cover;
+     color: white;
     position: relative;
     background: white !important;
     color: black !important;    background-size:cover;
@@ -23,6 +27,9 @@
     padding: 0;
     margin: 0;
     .row{
+        h2{
+            color: white;
+        }
         .content{
             width: 100%;
             z-index: 4;
@@ -31,6 +38,7 @@
                 font-weight: bolder;
             }
             p{
+                color: white;
                 font-weight: 500;
                 max-height: 100px;
                 overflow: auto;
