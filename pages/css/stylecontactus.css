@@ -118,6 +118,8 @@ nav ul li a, nav ul li svg {
   background-color: rgba(31, 31, 31, 0.2980392157);
 }
 .modalcontact .modal-content {
+  -webkit-box-shadow: 5px 5px 0px #333;
+          box-shadow: 5px 5px 0px #333;
   position: absolute;
   top: 50%;
   width: -webkit-fit-content;
