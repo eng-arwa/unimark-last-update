@@ -16,7 +16,7 @@
     .button .all .top {
 
         left: 50% !important;
-        transform: translateY(85px) !important;
+        transform: translateY(120px) !important;
     }
     .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
         

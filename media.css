@@ -1,43 +1,6 @@
 
 
-@media (min-width:641px)  {
-    .headtitle {
-        font-weight: normal;
-        font-size: 4rem !important;}
-    .cover img {
-        transform: translate(93%,-29%) !important;
-    
-    
-    }
-    .carsoul{
-        max-height: 200px;
-        background-size: cover !important;
-     
-    } 
-    .parent-carsoul{
-        padding: 100px 0 !important;
-    }
-   .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
-            right: 29%;
-        
-        }
-        .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
-       
-            font-size: 29px !important;}
-            .button .all .top svg{
-                font-size: 29px !important;
-            }
-        .slick-slide p{
-            font-size:.9rem !important;
-        }
-        .slick-slide h1{
-            font-size:1.5rem !important;
-        }
-        .slick-slide h4{
-            font-size: 1rem !important;
-        }
-     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-     }
+
 
 @media (min-width:320px)  { 
     .headtitle {
@@ -101,7 +64,44 @@
         }
 }
 
-
+@media (min-width:641px)  {
+    .headtitle {
+        font-weight: normal;
+        font-size: 4rem !important;}
+    .cover img {
+        transform: translate(93%,-29%) !important;
+    
+    
+    }
+    .carsoul{
+        max-height: 200px;
+        background-size: cover !important;
+     
+    } 
+    .parent-carsoul{
+        padding: 100px 0 !important;
+    }
+   .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
+            right: 29%;
+        
+        }
+        .carsoul button:not(:disabled), .carsoul [type=button]:not(:disabled), .carsoul [type=reset]:not(:disabled), .carsoul [type=submit]:not(:disabled):not(.slick-dots button) {
+       
+            font-size: 29px !important;}
+            .button .all .top svg{
+                font-size: 29px !important;
+            }
+        .slick-slide p{
+            font-size:.9rem !important;
+        }
+        .slick-slide h1{
+            font-size:1.5rem !important;
+        }
+        .slick-slide h4{
+            font-size: 1rem !important;
+        }
+     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+     }
  @media (min-width: 1025px) { 
         /* big landscape tablets, laptops, and desktops */
     
@@ -120,7 +120,7 @@
         .button .all .top {
     
             left: 50% !important;
-            transform: translateY(85px) !important;
+            transform: translateY(120px) !important;
         }
         .carsoul button:not(:disabled):nth-child(1), .carsoul [type=button]:not(:disabled):nth-child(1), .carsoul [type=reset]:not(:disabled):nth-child(1), .carsoul [type=submit]:not(:disabled):not(.slick-dots button):nth-child(1) {
             

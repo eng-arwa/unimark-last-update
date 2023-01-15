@@ -1,23 +1,26 @@
 let myNav = document.querySelector('nav');
 let menu = document.querySelectorAll('nav .menu-list li a')
 let langicon=document.querySelector('.langselect')
-
+let   logo2 =document.getElementById('logo');
 window.onscroll = () => {
   
     if (window.scrollY > 400) {
+        
         myNav.style.backgroundColor = '#1f1f1fc4';
         langicon.style.color='white'
         menu.forEach(e => {
             e.style.color='white'
         })
+        logo2.classList.add('active')
     } 
+
     else{
         myNav.style.backgroundColor = 'transparent';
         menu.forEach(e => {
             e.style.color='black'
         })
         langicon.style.color='black'
-
+        logo2.classList.remove('active')
     }
 };
 
@@ -160,7 +163,7 @@ function servicesindexEn(){
         
     }
     else if (currentslide == 'slick-slide06') {
-        window.open('./pages/create-brand-content.hml');
+        window.open('./pages/create-brand.html');
         
     }
     else if (currentslide == 'slick-slide07') {
@@ -200,7 +203,7 @@ function servicesindexEer(){
         
     }
     else if (currentslide == 'slick-slide06') {
-        window.open('./pages/create-brand-content.hml');
+        window.open('./pages/create-brand.html');
         
     }
     else if (currentslide == 'slick-slide07') {

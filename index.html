@@ -24,6 +24,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./map-style.css">
     <style>
+        .logo.active{
+            background: url('./image/UNIMARK\ LOGO_white.png') !important;
+            -webkit-transition: all 0.3s ease-in !important ;
+    transition: all 0.3s ease-in !important;
+    width: 125px !important;
+    height: 28px !important;
+    margin: auto !important;
+    background-size: 125px 28px !important;
+    background-position: 0 0 !important;
+    background-repeat: no-repeat !important;
+        }
+    
+         .logo {
+    background: url('./image/UNIMARK\ LOGO.png') !important ;
+                      
+    -webkit-transition: all 0.3s ease-in !important ;
+    transition: all 0.3s ease-in !important;
+    width: 125px !important;
+    height: 28px !important;
+    margin: auto !important;
+    background-size: 125px 28px !important;
+    background-position: 0 0 !important;
+    background-repeat: no-repeat !important;
+                    
+                    }
+
+                    .logo:hover {
+                        background: url('./image/Path\ 12.png') !important;
+                 
+                       background-size: 31px 28px !important;
+                        background-position: center center !important;
+                        background-repeat: no-repeat !important;
+                      }
         iframe{
     filter: blur(1.1);
 }
@@ -81,7 +114,7 @@
     <nav class="fixed-top">
         <div class="container">
          <ul class="menu-list">
-            <li><div class="logo"></div></li>
+            <li><div class="logo" id="logo"></div></li>
              <li ><a href="#home">Home</a></li>
              <li ><a href="./pages/aboutUs.html">about us</a>
              </li>
@@ -242,12 +275,12 @@
                          <div><img src="./image/promotion.png" alt="">
                              <h4> Digital
                                 Markiting </h4>
-                         <p>كن قريبا من عملائك</p></div>
+                         <p> Get close to your customers</p></div>
                          <div class="mt-5">
                              <h1>Services</h1>
                              </div>
                              <div><img src="./image/curve.png" alt="">
-                                 <h4> Creative design and production</h4>
+                                 <h4> Creative Design and Production</h4>
                                  <p>We Make Your DesignLife</p></div>
                                  <div><img src="./image/app-development.png" alt="">
                                      <h4> Mobile Development </h4>
@@ -257,34 +290,24 @@
                                         <h4>  Writing and creating content</h4>
                                         <p>Make your communication easier</p>
                                        </div>
+                                       
                                        <div><img src="./image/app-development.png" alt="">
                                         <h4>  Building and developing the brand</h4>
                                         <p>  An unforgettable and unique brand</p>
                                        </div>
+                                       
                                        <div><img src="./image/app-development.png" alt="">
-                                        <h4>  Writing and creating content</h4>
-                                        <p>Make your communication easier</p>
-                                       </div>  
+                                        <h4>  Media Production </h4>
+                                        <p>    Creativity starts here </p>
+                                       </div>
+                                        
                                        <div><img src="./image/app-development.png" alt="">
                                         <h4>  Organizing events and conferences</h4>
                                         <p>   Converting ideas into actions</p>
                                        </div>
-                                       <div><img src="./image/app-development.png" alt="">
-                                        <h4>  كتابة وصناعة المحتوي</h4>
-                                        <p>اجعل تواصلك اسهل</p>
-                                       </div>
-                                       <div><img src="./image/app-development.png" alt="">
-                                        <h4>  بناء وتطوير العالمة التجارية </h4>
-                                        <p>علامة تجارية لا تنسى وفريدة من نوعها</p>
-                                       </div>
-                                       <div><img src="./image/app-development.png" alt="">
-                                        <h4>   الانتاج الإعلامي </h4>
-                                        <p>    اجعل تواصلك اسهل </p>
-                                       </div>
-                                       <div><img src="./image/app-development.png" alt="">
-                                        <h4>  تنظيم الفعاليات والمؤتمرات </h4>
-                                        <p>    تحويل الافكار الى افعال </p>
-                                       </div>
+                                      
+                                       
+                                      
                        
                      
                </div>
@@ -574,6 +597,14 @@
             </footer>
         
  <script src="./js/main.js"></script>
+ <script>
+
+
+
+
+
+
+</script>
 <script src="./flickity.pkgd.min.js"></script>
 <script src="./js/all.js"></script>
 <script src="./js/bootstrap.bundle.js"></script>
@@ -696,6 +727,7 @@
 <!-- end mail -->
 <!-- start map  -->
 <script src="./map.js"></script>
+
 <!-- end map  -->
 </body>
 </html>
