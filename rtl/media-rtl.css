@@ -1,3 +1,9 @@
+@media (max-width:664px) {
+    html{
+        font-size:.8rem;
+    }
+}
+
 @media (min-width: 1025px) { 
     /* big landscape tablets, laptops, and desktops */
 

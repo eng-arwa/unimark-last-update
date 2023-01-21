@@ -1,8 +1,13 @@
 
 
-
+@media (max-width:664px) {
+    html{
+        font-size:.8rem;
+    }
+}
 
 @media (min-width:320px)  { 
+   
     .headtitle {
         font-weight: normal;
         font-size: 2rem;}

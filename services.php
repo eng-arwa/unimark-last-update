@@ -1,7 +1,7 @@
 <?php
 $name=$_POST['name'];
-$email=$_POST['email'];
-$mesage=$_POST['msg'];
+$email=$_POST['servicestype'];
+$mesage=$_POST['phone'];
 require "autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -13,18 +13,16 @@ $mail->SMTPAuth   = true;                                   //Enable SMTP authen
 $mail->Username   = 'social@unimarkme.com';                           //SMTP username
 $mail->Password   = 'fxtgldeuujccgyej';                        //SMTP password
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-$mail->Port       = 465;   
-$mail->SMTPDebug = 0; 
-$mail->SMTPDebug  = SMTP::DEBUG_OFF;                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 //Content format
 $mail->isHTML(true);        //Set email format to HTML
 $mail->CharSet = "UTF-8"; 
-$mail->setFrom($email,$name);
+$mail->setFrom('social@unimarkme.com',$name);
 $mail->addAddress('social@unimarkme.com','Unimark');
-$mail->Subject=$name .' ' . ' send email using unimark website';
-$mail->AddReplyTo($email, $name);
-$mail->Body='massage from : '  . $name . ' he/she say <br> ' . $mesage;
+$mail->Subject= $name .' ' . ' send email using unimark website ';
+
+$mail->Body='massage from : '  . $name . ' he/she need service/s <br> ' . $email .'<br>'.' his/her phone to to contect with his/her is '. $mesage;
 $mail->send();//Enable implicit TLS encryption
 
 

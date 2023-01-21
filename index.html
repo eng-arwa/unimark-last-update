@@ -528,7 +528,7 @@
             <div class="container pt-5 ">
                 <h3 class="text-center" style="font-size: 3rem;">Countact us</h3>
                 <div class="row pt-5">
-                   <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center ">
+                   <div class="col-lg-6 col-md-12 mb-5 col-sm-12 col-12 d-flex align-items-center ">
                     <div class="contact-info pt-2 mb-5">
                         <div style="flex: 1;" class=" justify-content-center align-items-center">
                             <img src="./image/UNIMARK LOGO_icon grey.png" alt="" >
@@ -544,7 +544,7 @@
                     </div>
                     
                    </div>
-                   <div class="col-lg-5 col-md-6 col-12 col-sm-12 ms-lg-5">
+                   <div class="col-lg-5 col-md-12 col-12 col-sm-12 ms-lg-5">
                     <div class="form ">
                         
                         <form method="post" action="send.php" name="emailcontact" >
@@ -555,10 +555,10 @@
                                     <input type="text" required name="name" id="name">
                                    <hr>
                                     <label for="email">email</label>
-                                    <input type="text" required name="email" id="email">
+                                    <input type="email" required name="email" id="email">
                                     <hr>
                                     <label for="msg">message</label>
-                                    <input name="msg" required id="msg">
+                                    <input type="text" name="msg" required id="msg">
                                    </div>
                                     <button type="submit" class="mb-2 m-auto mt-4 d-flex  submit">Send</button>
 
@@ -572,15 +572,15 @@
             </div>
             </div>
             <footer>
-                <div class="container pt-4 pb-4">
+                <div class="container-fluid pt-4 pb-4">
                  <div class="row text-center">
-                    <div class="col-lg-4 col-md-4 col-xs-4 ms-lg-2">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ms-lg-2">
                         <i class="fa-brands fa-instagram me-2"></i>
                         <i class="fa-brands fa-dribbble me-2"></i>
                         <i class="fa-brands fa-twitter me-2"></i>
                         <i class="fa-brands fa-facebook me-2"></i>
                     </div>
-                    <div  class="col-lg-4 col-md-4 col-xs-4">
+                    <div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <ul class="align-items-center justify-content-center">
                             <li>contact with us</li>
                             <li>about us</li>
@@ -588,7 +588,7 @@
                             <li>home page</li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-xs-3">
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                         <p>&copy; by unimark</p>
                     </div>
                  </div>
@@ -698,7 +698,7 @@
 <!-- mail -->
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
-<script>
+<!-- <script>
 
     let btn=document.getElementById('send');
    btn.addEventListener('click',(e)=>{
@@ -712,18 +712,18 @@
     )
     Email.send({
     Host : "smtp.gmail.com",
-    Username : "arwaahmedhaider@gmail.com",
-    Password : "dvzakjopkzihuwmm",
-    To : 'arwaahmedhaider@gmail.com',
+    Username : "social@unimarkme.com",
+    Password : "fxtgldeuujccgyej",
+    To : 'social@unimarkme.com',
     From : email,
-    Subject : "This is the subject",
+    Subject : "massage from unimark website",
     Body : bodytetex
 }).then(
   message => alert(message)
 );
    });
   
-</script>
+</script> -->
 <!-- end mail -->
 <!-- start map  -->
 <script src="./map.js"></script>

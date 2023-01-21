@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../flickity.css">
-    <title>Unimark</title>
+    <title>يونيمارك</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/stylesearch.css">
     <link rel="stylesheet" href="../css/mobile-menu.css">
@@ -546,7 +546,7 @@
                         </div>
                         <div class="text-contact" style="flex: 3;">
                             <p >
-                                يونيمارك شــركة ســعودية للخدمــات التســويقية ، تهــدف إلــى تقديــم أفضــلالخدمـات التسـويقية التـي تتناسـب مـع احتياجـات عملائنـا، على قـدر عـاٍل مـن التميـز والجـودة.
+                                يونيمارك شــركة ســعودية للخدمــات التســويقية ، تهــدف إلــى تقديــم أفضــل الخدمـات التسـويقية التـي تتناسـب مـع احتياجـات عملائنـا، على قـدر عـاٍل مـن التميـز والجـودة.
                                 يعمــل فريق يونيمارك بمهنيــة عاليــة لتصميــم خدماتنــا تناسـب الاحتيـاج الفعلـي المبنـي على تحليـل وتشـخيص الأداء لشـركائنا لتقديـم الحلـول المناسـبة لتسـهيل عمليـة تحسين الأداء العـام.
                                 نقـدم خدمـات تسـويقية  متكاملـة للشـركات العاملـة في كل القطاعـات بشـكل يجعـلنا  دائمـا  مواكبـين للتغيـرات و التوجهـات الحديثـة في الأسـواق المحليـة والعالميـة بالأخـذ بأحـدث الأسـاليب ونمـاذج الأعمـال لتطويـر و تنفيـذ أفضـل الحلـول التسـويقية لشركائنا لنجعل أداءهـا متناغمـا مـع المتغيـرات المسـتمرة في بيئـة الأعمـال السـعودية والخليجيـة.
 
@@ -565,7 +565,7 @@
                             <input type="text" name="name" id="name">
                            <hr>
                             <label for="email">الايميل</label>
-                            <input type="text" name="email" id="email">
+                            <input type="email" name="email" id="email">
                             <hr>
                             <label for="meg">الرساله</label>
                             <input name="meg" id="meg">
@@ -581,13 +581,13 @@
             <footer>
                 <div class="container-fluid pt-4 pb-4">
                  <div class="row text-center">
-                    <div class="col-lg-4 col-md-4 col-xs-4 ms-lg-2">
+                    <div class="col-lg-3 col-md-3 col-xs-12 ms-lg-2">
                         <i class="fa-brands fa-instagram ms-2"></i>
                         <i class="fa-brands fa-dribbble ms-2"></i>
                         <i class="fa-brands fa-twitter ms-2"></i>
                         <i class="fa-brands fa-facebook ms-2"></i>
                     </div>
-                    <div  class="col-lg-4 col-md-4 col-xs-4">
+                    <div  class="col-lg-6 col-md-6 col-xs-12">
                         <ul class="align-items-center justify-content-center">
                             <li>الصفحة الرئيسيه</li>
                             <li>من نحن</li>
@@ -595,7 +595,7 @@
                             <li>تواصل بنا</li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-xs-3">
+                    <div class="col-lg-2 col-md-2 col-xs-12">
                         <p>&copy; يونيمارك</p>
                     </div>
                  </div>
@@ -627,44 +627,73 @@
        onAfterChange: function(slide, index){
  console.log( $(this).attr('id') ); 
  console.log( $(slide).attr('id') );
-}
-       });
-   $(document).ready(function(){
-   $('.customer-logos').slick({
-       slidesToShow: 6,
-       slidesToScroll: 1,
-       autoplay: true,
-       autoplaySpeed: 1500,
-       arrows: true,
-       dots: false,
-       pauseOnHover: false,
-       responsive: [{
-           breakpoint: 768,
-           settings: {
-               slidesToShow: 4
-           }
-       }, {
-           breakpoint: 520,
-           settings: {
-               slidesToShow: 3
-           }
-       }]
-   });
-});
-       $(document).ready(function(){
-       $('.carousel').slick({
-       slidesToShow: 3,
-       dots:true,
-       centerMode: true,
-       rtl:true,
-       cancelable:true,
-       lazyLoad: 'progressive',
+},
 
-       onAfterChange: function(slider,index){
-       console.log($(slider.$slides.get(index)).data('name'))
- }
+responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
        });
-     });
+//    $(document).ready(function(){
+//    $('.customer-logos').slick({
+//        slidesToShow: 3,
+//        slidesToScroll: 1,
+//        autoplay: true,
+//        autoplaySpeed: 1500,
+//        arrows: true,
+//        dots: false,
+//        pauseOnHover: false,
+//        responsive: [{
+//            breakpoint: 768,
+//            settings: {
+//                slidesToShow: 4
+//            }
+//        }, {
+//            breakpoint: 520,
+//            settings: {
+//                slidesToShow: 3
+//            }
+//        }]
+//    });
+// });
+//        $(document).ready(function(){
+//        $('.carousel').slick({
+//        slidesToShow: 3,
+//        dots:true,
+//        centerMode: true,
+//        rtl:true,
+//        cancelable:true,
+//        lazyLoad: 'progressive',
+
+//        onAfterChange: function(slider,index){
+//        console.log($(slider.$slides.get(index)).data('name'))
+//  }
+//        });
+//      });
 
 
      
