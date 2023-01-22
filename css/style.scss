@@ -230,12 +230,13 @@ div{
 .about-us{
     background: url('../image/Layer\ 6.png')  ;
     background-color: black;
-    background-position: bottom;
+    background-position: top;
+    
    min-height: 101vh;
   
     background-size: contain;
     color: white;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     position: relative;
     .box{
         position: relative;
