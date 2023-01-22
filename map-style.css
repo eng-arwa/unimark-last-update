@@ -52,7 +52,21 @@
     font-family: "break-5";
   }
 }
-
+@media(min-width:665px){
+  .fa-location-dot{
+    font-size: 22px;
+}
+}
+@media(max-width:664px){
+  .fa-location-dot{
+    font-size: 15px;
+}
+}
+@media(max-width:320px){
+  .fa-location-dot{
+    font-size: 10px;
+}
+}
 /* =Map Pin Animation
 // ========================================================================== */
 @-webkit-keyframes pulsate {
@@ -247,22 +261,27 @@
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
+
+
+
 #places-map .marker-argentina {
   left: 41.5%;
-  bottom: 39.5%;
+  /* bottom: 39.5%; */
+  bottom: 45.5%;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 
 }
 #places-map .marker-dubai {
   left: 38%;
-  top: 53%;
+  /* top: 53%; */
+  top: 49%;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 #places-map .marker-costa-rica {
   left: 41.5%;
-  top: 53%;
+  top: 49%;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }

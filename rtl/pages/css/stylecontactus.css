@@ -26,6 +26,9 @@ nav ul li a, nav ul li svg {
   border-radius: 50px;
   background-color: #1f1f1f;
 }
+.modalbook .modal-content span {
+  font-family: "Font Awesome 6 Free";
+}
 .modalbook .modal-content .cloes {
   position: absolute;
   top: 5%;
@@ -134,6 +137,9 @@ nav ul li a, nav ul li svg {
   left: 20%;
   border-radius: 50px;
   background-color: #1f1f1f;
+}
+.modalcontact .modal-content span {
+  font-family: "Font Awesome 6 Free";
 }
 .modalcontact .modal-content .cloes {
   position: absolute;

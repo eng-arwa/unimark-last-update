@@ -30,7 +30,7 @@ nav ul li a , nav ul li svg{
         }
         .content{
             width: 100%;
-            z-index: 4;
+            z-index: 100 !important;
             h3{
                 color: #323543;
                 font-weight: bolder;

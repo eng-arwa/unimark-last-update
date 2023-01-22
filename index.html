@@ -27,26 +27,26 @@
         .logo.active{
             background: url('./image/UNIMARK\ LOGO_white.png') !important;
             -webkit-transition: all 0.3s ease-in !important ;
-    transition: all 0.3s ease-in !important;
-    width: 125px !important;
-    height: 28px !important;
-    margin: auto !important;
-    background-size: 125px 28px !important;
-    background-position: 0 0 !important;
-    background-repeat: no-repeat !important;
+            transition: all 0.3s ease-in !important;
+            width: 125px !important;
+            height: 28px !important;
+            margin: auto !important;
+            background-size: 125px 28px !important;
+            background-position: 0 0 !important;
+            background-repeat: no-repeat !important;
         }
     
          .logo {
-    background: url('./image/UNIMARK\ LOGO.png') !important ;
-                      
-    -webkit-transition: all 0.3s ease-in !important ;
-    transition: all 0.3s ease-in !important;
-    width: 125px !important;
-    height: 28px !important;
-    margin: auto !important;
-    background-size: 125px 28px !important;
-    background-position: 0 0 !important;
-    background-repeat: no-repeat !important;
+            background: url('./image/UNIMARK\ LOGO.png') !important ;
+                            
+            -webkit-transition: all 0.3s ease-in !important ;
+            transition: all 0.3s ease-in !important;
+            width: 125px !important;
+            height: 28px !important;
+            margin: auto !important;
+            background-size: 125px 28px !important;
+            background-position: 0 0 !important;
+            background-repeat: no-repeat !important;
                     
                     }
 
@@ -144,7 +144,7 @@
     
          </ul>
          <div class="hamburger-menu menu-mobile pt-2 pb-2">
-            <div class="logo"></div>
+            <div class="logo" id="logo"></div>
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
               <span></span>
@@ -187,7 +187,7 @@
         
          <div class="show-vid" id="home">
             <div class="mt-5">
-                <video src="./video/Platform Vt1.mp4" controls ></video>
+                <video src="./video/Platform Vt1.mp4" controls autoplay></video>
             
             </div>
         </div>
@@ -582,14 +582,14 @@
                     </div>
                     <div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <ul class="align-items-center justify-content-center">
-                            <li>contact with us</li>
+                            <li>contact us</li>
                             <li>about us</li>
-                            <li>our sevices</li>
+                            <li>our services</li>
                             <li>home page</li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                        <p>&copy; by unimark</p>
+                        <p> Unimark &copy; <span>2023</span> </p>
                     </div>
                  </div>
                     
@@ -651,44 +651,37 @@
        onAfterChange: function(slide, index){
  console.log( $(this).attr('id') ); 
  console.log( $(slide).attr('id') );
-}
+},
+responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
        });
-   $(document).ready(function(){
-   $('.customer-logos').slick({
-       slidesToShow: 6,
-       slidesToScroll: 1,
-       autoplay: true,
-       autoplaySpeed: 1500,
-       arrows: true,
-       dots: false,
-       pauseOnHover: false,
-       responsive: [{
-           breakpoint: 768,
-           settings: {
-               slidesToShow: 4
-           }
-       }, {
-           breakpoint: 520,
-           settings: {
-               slidesToShow: 3
-           }
-       }]
-   });
-});
-       $(document).ready(function(){
-       $('.carousel').slick({
-       slidesToShow: 1,
-       dots:true,
-       centerMode: true,
-       rtl:true,
-       cancelable:true,
-       lazyLoad: 'progressive',
 
-       onAfterChange: function(slider,index){
-       console.log($(slider.$slides.get(index)).data('name'))
- }
-       });
-     });
 
 
      

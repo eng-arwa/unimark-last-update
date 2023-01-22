@@ -2,6 +2,7 @@
     html{
         font-size:.8rem;
     }
+   
 }
 
 @media (min-width: 1025px) { 
@@ -33,6 +34,7 @@
 /* medua */
 
 @media (min-width:320px)  { 
+   
     .headtitle {
         font-weight: normal;
         font-size: 2rem;

@@ -702,6 +702,9 @@ footer svg {
   padding: 8px;
   border-radius: 50%;
 }
+footer span {
+  font-family: "Font Awesome 6 Free";
+}
 footer ul {
   list-style: none;
   display: -webkit-box;

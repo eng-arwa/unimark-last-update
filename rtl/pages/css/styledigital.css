@@ -27,7 +27,7 @@ nav ul li a, nav ul li svg {
 }
 .home .container-fluid .row .content {
   width: 100%;
-  z-index: 4;
+  z-index: 100 !important;
 }
 .home .container-fluid .row .content h3 {
   color: #323543;

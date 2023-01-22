@@ -1,17 +1,20 @@
 let myNav = document.querySelector('nav');
 let menu = document.querySelectorAll('nav .menu-list li a')
 let langicon=document.querySelector('.langselect')
-let   logo2 =document.getElementById('logo');
+let logo2 = document.getElementById('logo');
+let logo3=document.querySelector('#logo')
 window.onscroll = () => {
   
     if (window.scrollY > 400) {
-        
+        let logo3=document.querySelector('.menu-mobile #logo')
         myNav.style.backgroundColor = '#1f1f1fc4';
         langicon.style.color='white'
         menu.forEach(e => {
             e.style.color='white'
         })
-        logo2.classList.add('active')
+        logo2.classList.add('active');
+        logo3.classList.add('active')
+        
     } 
 
     else{
@@ -19,8 +22,10 @@ window.onscroll = () => {
         menu.forEach(e => {
             e.style.color='black'
         })
+        let logo3=document.querySelector('.menu-mobile #logo')
         langicon.style.color='black'
-        logo2.classList.remove('active')
+        logo2.classList.remove('active');
+        logo3.classList.remove('active')
     }
 };
 
