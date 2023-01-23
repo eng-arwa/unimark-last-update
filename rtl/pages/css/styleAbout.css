@@ -83,6 +83,10 @@ nav ul li a, nav ul li svg {
   overflow: hidden;
 }
 
+.mission {
+  background-color: black;
+  color: white;
+}
 .mission .container .row h1 {
   text-transform: uppercase;
 }
