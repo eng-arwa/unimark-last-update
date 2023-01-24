@@ -19,6 +19,9 @@ nav ul li a, nav ul li svg {
   background-color: black;
   color: white !important;
 }
+.home .service ol {
+  text-align: justify;
+}
 .home .service p, .home .service h1, .home .service small {
   margin-bottom: 0;
 }
