@@ -56,7 +56,8 @@ nav ul li a, nav ul li svg {
 }
 
 .services-type {
-  background: url("../../../pages/images/BACKGROUND BLUR.png") #eee;
+  background: -webkit-gradient(linear, right top, left top, color-stop(60%, #eee), to(rgb(165, 165, 165)));
+  background: linear-gradient(to left, #eee 60%, rgb(165, 165, 165));
   background-size: cover;
 }
 .services-type .row {
