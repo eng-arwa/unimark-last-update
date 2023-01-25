@@ -178,8 +178,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .about-us {
-  background: url("../image/layer 6.jpg");
-  background-color: black;
+  background: url("../image/Layer 6.JPG");
   background-position: top;
   min-height: 101vh;
   background-size: contain;
@@ -529,7 +528,6 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .contact {
-  background-color: black;
   color: white;
 }
 .contact .container input[type=submit] {
