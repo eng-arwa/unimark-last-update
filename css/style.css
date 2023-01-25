@@ -528,6 +528,7 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .contact {
+  background: black;
   color: white;
 }
 .contact .container input[type=submit] {
