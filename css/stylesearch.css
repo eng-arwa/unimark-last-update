@@ -93,7 +93,7 @@ height: 11px;
 left: 9px;
 top: 18px;
 border-radius: 2px;
-background: #D70000;
+background: white;
 }
 .search-wrapper .input-holder .search-icon span::after {
 width: 14px;
@@ -101,7 +101,7 @@ height: 14px;
 left: 0px;
 top: 0px;
 border-radius: 16px;
-border: 4px solid #D70000;
+border: 4px solid white;
 }
 .search-wrapper .close {
 position: absolute;
@@ -125,7 +125,7 @@ transition-delay: 0.5s;
 .search-wrapper .close::before, .search-wrapper .close::after {
 position:absolute;
 content:'';
-background: #D70000;
+background: white;
 border-radius: 2px;
 }
 .search-wrapper .close::before {

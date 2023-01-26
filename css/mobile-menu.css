@@ -54,7 +54,7 @@
   padding: 80px 0;
   list-style: none;
   background: #1f1f1f;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  /* box-shadow: 2px 2px 6px rgba(0, 0, 0, .4); */
   transition-duration: .25s;
 }
 .menu__box li a{
@@ -105,8 +105,8 @@
   top: 40px;
   left: 0;
   padding: 20px;
- background-color: #1f1f1f4c;
- box-shadow: 5px 5px 2px #eee;
+ background-color: #333;
+ /* box-shadow: 5px 5px 2px #eee; */
 }
 
 .langselect ul li {

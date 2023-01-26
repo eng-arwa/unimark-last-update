@@ -1,6 +1,9 @@
 nav ul li a , nav ul li svg{
     color: white !important;
 }
+body{
+    position: relative;
+}
 .modalbook{
     position: absolute;
     width: 100%;
@@ -13,21 +16,21 @@ nav ul li a , nav ul li svg{
             font-family: 'Font Awesome 6 Free';
         }
         position: absolute;
-        top: 50%;
+        top: 20%;
        width: fit-content;
         padding: 30px 100px;
         margin: auto;
-        left: 20%;
+        left: 40%;
         .cloes{
             position: absolute;
             top: 5%;
-            color: white;
+            color: black;
             right: 11%;
             cursor: pointer;
         }
      
         border-radius: 20px;
-        background-color: #1f1f1f;
+        background-color: white;
         // background:linear-gradient(#fffbfb,#a7a7a7) !important;
         form{
             position: relative;
@@ -76,11 +79,13 @@ nav ul li a , nav ul li svg{
         button{
             border-radius: 10px;
            padding: 2px 15px;
-           background-color: #EDEDED;
+           background-color:black;
+           color: white;
+            // #EDEDED;
            transform: translate(116%, 50%);
            border: none;
            position: relative;
-           color: #D70000;
+          
            z-index: 5;
            &::after{
             content: '';
@@ -98,8 +103,8 @@ nav ul li a , nav ul li svg{
         &:hover::after{
             width: 100%;
             height: 100%;
-            background-color:#D70000 ;
-            transition: .5s;
+            background-color:#B92121 ;
+            transition: .2s;
             z-index: -1;
             
 
@@ -125,37 +130,38 @@ nav ul li a , nav ul li svg{
         }
         box-shadow: 5px 5px 0px #333;
         position: absolute;
-        top: 50%;
+        top: 20%;
        width: fit-content;
         padding: 30px 100px;
         svg{
-            color: #d70000;
+            color: #B92121;
         }
         span{
-            color: white;
+            color: black;
         }
         margin: auto;
-        left: 20%;
+        left: 40%;
         .cloes{
             position: absolute;
             top: 5%;
-            color: white;
+            color: black;
             right: 11%;
             cursor: pointer;
         }
      
         border-radius: 20px;
-        background-color: #1f1f1f;
+        background-color: white;
         // background:linear-gradient(#fffbfb,#a7a7a7) !important;
     
         button{
             border-radius: 10px;
            padding: 2px 15px;
-           background-color: #EDEDED;
+           background-color: black;
+           color: white;
            transform: translate(116%, 50%);
            border: none;
            position: relative;
-           color: #D70000;
+           
            z-index: 5;
            &::after{
             content: '';
@@ -173,8 +179,8 @@ nav ul li a , nav ul li svg{
         &:hover::after{
             width: 100%;
             height: 100%;
-            background-color:#D70000 ;
-            transition: .5s;
+            background-color:#B92121 ;
+            transition: .2s;
             z-index: -1;
             
 

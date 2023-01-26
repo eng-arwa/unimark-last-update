@@ -2,6 +2,10 @@ nav ul li a, nav ul li svg {
   color: white !important;
 }
 
+body {
+  position: relative;
+}
+
 .modalbook {
   position: absolute;
   width: 100%;
@@ -12,15 +16,15 @@ nav ul li a, nav ul li svg {
 }
 .modalbook .modal-content {
   position: absolute;
-  top: 50%;
+  top: 20%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 30px 100px;
   margin: auto;
-  left: 20%;
+  left: 40%;
   border-radius: 20px;
-  background-color: #1f1f1f;
+  background-color: white;
 }
 .modalbook .modal-content span {
   font-family: "Font Awesome 6 Free";
@@ -28,7 +32,7 @@ nav ul li a, nav ul li svg {
 .modalbook .modal-content .cloes {
   position: absolute;
   top: 5%;
-  color: white;
+  color: black;
   right: 11%;
   cursor: pointer;
 }
@@ -79,12 +83,12 @@ nav ul li a, nav ul li svg {
 .modalbook .modal-content button {
   border-radius: 10px;
   padding: 2px 15px;
-  background-color: #EDEDED;
+  background-color: black;
+  color: white;
   -webkit-transform: translate(116%, 50%);
           transform: translate(116%, 50%);
   border: none;
   position: relative;
-  color: #D70000;
   z-index: 5;
 }
 .modalbook .modal-content button::after {
@@ -103,9 +107,9 @@ nav ul li a, nav ul li svg {
 .modalbook .modal-content button:hover::after {
   width: 100%;
   height: 100%;
-  background-color: #D70000;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background-color: #B92121;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   z-index: -1;
 }
 .modalbook .modal-content button:hover {
@@ -124,41 +128,41 @@ nav ul li a, nav ul li svg {
   -webkit-box-shadow: 5px 5px 0px #333;
           box-shadow: 5px 5px 0px #333;
   position: absolute;
-  top: 50%;
+  top: 20%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 30px 100px;
   margin: auto;
-  left: 20%;
+  left: 40%;
   border-radius: 20px;
-  background-color: #1f1f1f;
+  background-color: white;
 }
 .modalcontact .modal-content span {
   font-family: "Font Awesome 6 Free";
 }
 .modalcontact .modal-content svg {
-  color: #d70000;
+  color: #B92121;
 }
 .modalcontact .modal-content span {
-  color: white;
+  color: black;
 }
 .modalcontact .modal-content .cloes {
   position: absolute;
   top: 5%;
-  color: white;
+  color: black;
   right: 11%;
   cursor: pointer;
 }
 .modalcontact .modal-content button {
   border-radius: 10px;
   padding: 2px 15px;
-  background-color: #EDEDED;
+  background-color: black;
+  color: white;
   -webkit-transform: translate(116%, 50%);
           transform: translate(116%, 50%);
   border: none;
   position: relative;
-  color: #D70000;
   z-index: 5;
 }
 .modalcontact .modal-content button::after {
@@ -177,9 +181,9 @@ nav ul li a, nav ul li svg {
 .modalcontact .modal-content button:hover::after {
   width: 100%;
   height: 100%;
-  background-color: #D70000;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background-color: #B92121;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   z-index: -1;
 }
 .modalcontact .modal-content button:hover {
