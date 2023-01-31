@@ -515,7 +515,7 @@ text-align: center;
   content: 'Yemen ';
 }
 .info:last-child:before{
-  content: 'UAU ';
+  content: 'UAE ';
 }
 
 .info::after{

@@ -2,7 +2,12 @@ let myNav = document.querySelector('nav');
 let menu = document.querySelectorAll('nav .menu-list li a')
 let langicon=document.querySelector('.langselect')
 let logo2 = document.getElementById('logo');
-let logo3=document.querySelector('#logo')
+let logo3 = document.querySelector('#logo');
+let search1 = document.querySelector('.search-wrapper .input-holder .search-icon span::before');
+let search2 = document.querySelector(' .search-wrapper .input-holder .search-icon span::after')
+let search3=document.querySelector(' .search-wrapper .close::before, .search-wrapper .close::after')
+
+
 window.onscroll = () => {
   
     if (window.scrollY > 400) {
@@ -13,7 +18,8 @@ window.onscroll = () => {
             e.style.color='white'
         })
         logo2.classList.add('active');
-        logo3.classList.add('active')
+        logo3.classList.add('active');
+        search1.style.backgroundColor='black'
         
     } 
 

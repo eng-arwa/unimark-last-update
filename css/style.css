@@ -224,7 +224,8 @@ nav .container .menu-list .parent:hover .logo-1 {
 }
 
 .right img {
-  max-width: 126%;
+  margin-top: 5rem;
+  max-width: 100%;
 }
 
 .left h5 {
