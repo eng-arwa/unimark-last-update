@@ -1,4 +1,13 @@
-
+span.mark{
+  background-color: #d70000 !important;
+  color: white;
+  letter-spacing: normal;
+}
+span{
+  background-color: transparent;
+  color: white;
+  letter-spacing: normal;
+}
 .search-wrapper.active .input-holder{
   transform: translateY(10px) !important;
 }

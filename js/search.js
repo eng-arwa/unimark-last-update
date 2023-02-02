@@ -30,7 +30,7 @@ function searchToggle(obj, evt) {
                
                 let pattern = new RegExp(`${textsearch}`, "gi");
                
-               e.innerHTML = e.textContent.replace(pattern, match => `<mark class='mark'>${match}</mark>`)
+               e.innerHTML = e.textContent.replace(pattern, match => `<span class='mark'>${match}</span>`)
                     
         
                
@@ -39,8 +39,9 @@ function searchToggle(obj, evt) {
         
         else {
           
-            document.querySelectorAll('mark').forEach(e => {
-                e.remove()
+            document.querySelectorAll('.mark').forEach(e => {
+                e.classList.remove('mark');
+                
             });
         }
         
