@@ -6,16 +6,15 @@ nav ul li a, nav ul li svg {
 }
 
 .home{
-    background:url('../../../image/Layer\ 6.png') black;
-    background-size: cover;
+   
+    background:url('../../image/Layer\ 6.JPG');    
      background-size:cover;
      color: white;
     position: relative;
-    // background: url('../images/theme-photos-CGpifH3FjOA-unsplash.png');
- 
-  
-    background-size:100%;
-   background-position: center;
+
+
+       background-size:cover;
+   background-position: start;
     background-repeat: no-repeat;
    
   max-width: 100%;

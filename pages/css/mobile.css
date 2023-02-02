@@ -7,13 +7,12 @@ nav ul li a, nav ul li svg {
 }
 
 .home {
-  background: url("../../../image/layer 6.jpg") black;
-  background-size: cover;
+  background: url("../../image/Layer 6.JPG");
   background-size: cover;
   color: white;
   position: relative;
-  background-size: 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: start;
   background-repeat: no-repeat;
   max-width: 100%;
   max-height: 100%;
