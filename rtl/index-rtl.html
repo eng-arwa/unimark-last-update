@@ -25,6 +25,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../map-style.css">
     <style>
+        .search-wrapper .input-holder .search-icon span::before {
+
+background: black;
+}
+.search-wrapper .input-holder .search-icon span::after {
+
+border: 4px solid black;
+}
+.search-wrapper .close::before, .search-wrapper .close::after {
+position:absolute;
+content:'';
+background: black;
+border-radius: 2px;
+}
+.search-wrapper.white .input-holder .search-icon span::before {
+
+background: white;
+}
+.search-wrapper.white .input-holder .search-icon span::after {
+
+border: 4px solid white;
+}
+.search-wrapper.white .close::before, .search-wrapper .close::after {
+position:absolute;
+content:'';
+background: white;
+border-radius: 2px;
+}
+
           .logo.active{
             background: url('../image/UNIMARK\ LOGO_white.png') !important;
             -webkit-transition: all 0.3s ease-in !important ;
